@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  mediawiki:
+    build: .
+    ports:
+      - "80:${WIKI_PORT}"
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}" 
