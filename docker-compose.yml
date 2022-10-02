@@ -1,10 +1,16 @@
 version: '3.1'
 
 services:
-  mediawiki:
+  wiki:
     build: .
+    links:
+      - db
+    volumes:
+      - ./data/images:/var/www/html/images
     ports:
       - "80:${WIKI_PORT}"
+    environment:
+      - POSTGRES_PASSWORD
   db:
     image: postgres
     restart: always
