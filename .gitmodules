@@ -1,0 +1,3 @@
+[submodule "extensions/PageForms"]
+	path = extensions/PageForms
+	url = git@github.com:repair-wiki/mediawiki-extensions-PageForms.git
