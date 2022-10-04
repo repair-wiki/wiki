@@ -1,3 +1,20 @@
 [submodule "extensions/PageForms"]
 	path = extensions/PageForms
 	url = git@github.com:repair-wiki/mediawiki-extensions-PageForms.git
+[submodule "extensions/Discord"]
+	path = extensions/Discord
+	url = git@github.com:jayktaylor/mw-discord.git
+	branch = REL1_38
+[submodule "extensions/MobileFrontend"]
+	path = extensions/MobileFrontend
+	url = git@github.com:wikimedia/mediawiki-extensions-MobileFrontend.git
+	branch = REL1_38
+[submodule "extensions/TabberNeue"]
+	path = extensions/TabberNeue
+	url = git@github.com:StarCitizenTools/mediawiki-extensions-TabberNeue.git
+[submodule "extensions/Popups"]
+	path = extensions/Popups
+	url = git@github.com:wikimedia/mediawiki-extensions-Popups.git
+[submodule "extensions/Echo"]
+	path = extensions/Echo
+	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
