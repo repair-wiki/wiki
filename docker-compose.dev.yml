@@ -21,7 +21,7 @@ services:
       - DB_PASSWORD
       - ADMIN_USER
       - ADMIN_PASS
-      - FULL_URL="http://localhost:${WIKI_PORT}"
+      - FULL_URL=http://localhost:${WIKI_PORT}
       - MEDIAWIKI_SECRET
   db:
     image: mariadb

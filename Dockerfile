@@ -1,4 +1,4 @@
-FROM mediawiki:stable
+FROM mediawiki:1.38
 
 WORKDIR .
 

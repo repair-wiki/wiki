@@ -38,11 +38,9 @@ $wgServer = getenv('FULL_URL');
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
-## The URL paths to the logo.  Make sure you change this from the default,
-## or else you'll overwrite your logo when you upgrade!
 $wgLogos = [
-	'1x' => "$wgResourceBasePath/resources/assets/change-your-logo.svg",
-	'icon' => "$wgResourceBasePath/resources/assets/change-your-logo-icon.svg",
+	'1x' => "$wgResourceBasePath/images/repair_preservation_group.svg",
+	'icon' => "$wgResourceBasePath/images/repair_preservation_group.svg",
 ];
 
 ## UPO means: this is also a user preference option
@@ -157,19 +155,18 @@ wfLoadExtension( 'Parsoid', __DIR__ . "/vendor/wikimedia/parsoid/extension.json"
 wfLoadExtensions( [
 #    'Thanks',
     'Math',
-#    'EmbedVideo',
-#    'DynamicPageList3',
-#    'NativeSvgHandler',
-#    'LoginNotify',
-#    'LastUserLogin'
+    'EmbedVideo',
+    'DynamicPageList3',
+    'NativeSvgHandler',
+    'LoginNotify',
 ] );
 
 ## Other
 wfLoadExtension( 'Discord' );
 wfLoadExtension( 'PageForms' );
 wfLoadExtension( 'Popups' );
-#wfLoadExtension( 'Echo' );
-#wfLoadExtension( 'MobileFrontend' );
+wfLoadExtension( 'Echo' );
+wfLoadExtension( 'MobileFrontend' );
 wfLoadExtension( 'TabberNeue' );
 wfLoadExtension( 'SemanticMediaWiki' );
 
@@ -212,23 +209,23 @@ $wgPopupsReferencePreviewsBetaFeature = false;
 # Permissions
 
 ## ALL
-$wgGroupPermissions['*'            ]['skipcaptcha'] = false;
-$wgGroupPermissions['*'            ]['writeapi'] = true;
+$wgGroupPermissions['*']['skipcaptcha'] = false;
+$wgGroupPermissions['*']['writeapi'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
 
 ## User
-$wgGroupPermissions['user'         ]['skipcaptcha'] = false;
-$wgGroupPermissions['user'         ]['writeapi'] = true;
+$wgGroupPermissions['user']['skipcaptcha'] = false;
+$wgGroupPermissions['user']['writeapi'] = true;
 
 ## AutoConfirmed
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = false;
 
 ## Bot
-$wgGroupPermissions['bot'          ]['skipcaptcha'] = true; // registered bots
+$wgGroupPermissions['bot']['skipcaptcha'] = true; // registered bots
 $wgGroupPermissions['bot']['protect'] = true;
 
 ## Sysop
-$wgGroupPermissions['sysop'        ]['skipcaptcha'] = true;
+$wgGroupPermissions['sysop']['skipcaptcha'] = true;
 $wgGroupPermissions['sysop']['userrights-global'] = true;
 $wgGroupPermissions['sysop']['renameuser'] = true;
 
@@ -242,3 +239,6 @@ $wgGroupPermissions['no-captcha']['skipcaptcha'] = true;
 # Email
 
 ## TODO!
+
+# Dev
+$wgShowExceptionDetails = true;
