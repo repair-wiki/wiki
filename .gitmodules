@@ -1,3 +1,33 @@
 [submodule "extensions/PageForms"]
 	path = extensions/PageForms
 	url = git@github.com:repair-wiki/mediawiki-extensions-PageForms.git
+[submodule "extensions/Discord"]
+	path = extensions/Discord
+	url = git@github.com:jayktaylor/mw-discord.git
+	branch = REL1_38
+[submodule "extensions/MobileFrontend"]
+	path = extensions/MobileFrontend
+	url = git@github.com:wikimedia/mediawiki-extensions-MobileFrontend.git
+	branch = REL1_38
+[submodule "extensions/TabberNeue"]
+	path = extensions/TabberNeue
+	url = git@github.com:StarCitizenTools/mediawiki-extensions-TabberNeue.git
+[submodule "extensions/Popups"]
+	path = extensions/Popups
+	url = git@github.com:wikimedia/mediawiki-extensions-Popups.git
+[submodule "extensions/Echo"]
+	path = extensions/Echo
+	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
+	branch = REL1_38
+[submodule "extensions/LoginNotify"]
+	path = extensions/LoginNotify
+	url = git@github.com:wikimedia/mediawiki-extensions-LoginNotify.git
+[submodule "extensions/NativeSvgHandler"]
+	path = extensions/NativeSvgHandler
+	url = git@github.com:wikimedia/mediawiki-extensions-NativeSvgHandler.git
+[submodule "extensions/DynamicPageList3"]
+	path = extensions/DynamicPageList3
+	url = git@github.com:Universal-Omega/DynamicPageList3.git
+[submodule "extensions/EmbedVideo"]
+	path = extensions/EmbedVideo
+	url = git@github.com:StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
