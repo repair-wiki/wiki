@@ -242,3 +242,5 @@ $wgGroupPermissions['no-captcha']['skipcaptcha'] = true;
 
 # Dev
 $wgShowExceptionDetails = true;
+
+$wgUpgradeKey = getenv('WIKI_UPGRADE_KEY')
