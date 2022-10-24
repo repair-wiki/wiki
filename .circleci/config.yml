@@ -6,9 +6,11 @@ jobs:
       - image: docker:17.05.0-ce-git
     steps:
       - run:
-          name: submodules
+          name: init submodules
           command: |
+            cd app
             git submodule sync --recursive && git submodule update --recursive --init
+            cd -
       - setup_remote_docker
       - run:
           name: Install dependencies
