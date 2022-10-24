@@ -8,7 +8,7 @@ jobs:
       - run:
           name: init submodules
           command: |
-            cd app
+            cd /app
             git submodule sync --recursive && git submodule update --recursive --init
             cd -
       - setup_remote_docker
