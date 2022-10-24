@@ -5,7 +5,10 @@ jobs:
     docker:
       - image: docker:17.05.0-ce-git
     steps:
-      - checkout
+      - checkout:
+        post:
+          - git submodule init 
+          - git submodule update
       - setup_remote_docker
       - run:
           name: Install dependencies
