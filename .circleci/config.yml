@@ -46,4 +46,6 @@ jobs:
               ${login}
               docker tag app "${ECR_ENDPOINT}/wiki:${CIRCLE_SHA1}"
               docker push "${ECR_ENDPOINT}/wiki:${CIRCLE_SHA1}"
+              docker push "${ECR_ENDPOINT}/wiki:latest"
+
             fi
