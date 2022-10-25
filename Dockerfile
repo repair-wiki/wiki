@@ -17,3 +17,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer-merge-plugin
 RUN /usr/local/bin/composer require --no-update mediawiki/semantic-media-wiki
 RUN /usr/local/bin/composer update --no-dev
+
+# Cloudflare IPs
+RUN a2enmod remoteip
+RUN echo 'RemoteIPHeader CF-Connecting-IP \n\
+RemoteIPInternalProxy 10.0.0.0/16' > /etc/apache2/conf-available/remoteip.conf
+RUN a2enconf remoteip
