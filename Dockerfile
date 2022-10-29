@@ -20,6 +20,6 @@ RUN /usr/local/bin/composer update --no-dev
 
 # Cloudflare IPs
 RUN a2enmod remoteip
-RUN echo 'RemoteIPHeader CF-Connecting-IP \n\
+RUN echo 'RemoteIPHeader X-Forwarded-For\n\
 RemoteIPTrustedProxy 10.0.0.0/16' > /etc/apache2/conf-available/remoteip.conf
 RUN a2enconf remoteip
