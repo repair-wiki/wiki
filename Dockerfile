@@ -14,6 +14,8 @@ RUN apt install zip unzip
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 # Semantic Mediawiki
+COPY ./composer.local.json /var/www/html/composer.local.json
+RUN rm /var/www/html/composer.lock
 RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer-merge-plugin
 RUN /usr/local/bin/composer require --no-update mediawiki/semantic-media-wiki
 RUN /usr/local/bin/composer update --no-dev

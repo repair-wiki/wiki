@@ -244,3 +244,5 @@ $wgGroupPermissions['no-captcha']['skipcaptcha'] = true;
 $wgShowExceptionDetails = true;
 
 $wgUpgradeKey = getenv('WIKI_UPGRADE_KEY');
+
+$wgReadOnly = getenv('WIKI_READ_ONLY');
