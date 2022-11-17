@@ -137,7 +137,6 @@ wfLoadSkin( 'Vector' );
 ## Mediawiki Default
 wfLoadExtension( 'Cite' );
 wfLoadExtension( 'CodeEditor' );
-wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/QuestyCaptcha' ]);
 wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'ImageMap' );
 wfLoadExtension( 'InputBox' );
@@ -174,11 +173,6 @@ wfLoadExtension( 'SemanticMediaWiki' );
 # Extension configuration
 
 ## ConfirmEdit/QuestyCaptcha
-
-## TODO: Figure out how to securely seperate these from here
-$wgCaptchaQuestions = [
-	'What color is snow?' => 'white',
-];
 
 $wgCaptchaTriggers['edit'] = true; 
 $wgCaptchaTriggers['create'] = true; 
@@ -246,3 +240,7 @@ $wgShowExceptionDetails = true;
 $wgUpgradeKey = getenv('WIKI_UPGRADE_KEY');
 
 $wgReadOnly = getenv('WIKI_READ_ONLY');
+
+wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha' ]);
+$wgHCaptchaSiteKey = '9482d04e-48d5-44a4-a74a-764c4f11bf20';
+$wgHCaptchaSecretKey = getenv('WIKI_CAPTCHA_KEY');
