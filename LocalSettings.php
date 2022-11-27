@@ -168,6 +168,8 @@ wfLoadExtension( 'Echo' );
 wfLoadExtension( 'MobileFrontend' );
 wfLoadExtension( 'TabberNeue' );
 wfLoadExtension( 'SemanticMediaWiki' );
+wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'DeleteBatch' );
 
 
 # Extension configuration
