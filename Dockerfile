@@ -19,7 +19,7 @@ RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer
 RUN /usr/local/bin/composer require --no-update mediawiki/semantic-media-wiki
 RUN /usr/local/bin/composer update --no-dev
 
-# Cloudflare IPs
+# Amazon LB IPs
 RUN a2enmod remoteip
 RUN echo 'RemoteIPHeader X-Forwarded-For\n\
 RemoteIPTrustedProxy 10.0.0.0/16' > /etc/apache2/conf-available/remoteip.conf
