@@ -244,5 +244,12 @@ $wgUpgradeKey = getenv('WIKI_UPGRADE_KEY');
 $wgReadOnly = getenv('WIKI_READ_ONLY');
 
 wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha' ]);
+
 $wgHCaptchaSiteKey = '9482d04e-48d5-44a4-a74a-764c4f11bf20';
 $wgHCaptchaSecretKey = getenv('WIKI_CAPTCHA_KEY');
+
+# For some reason the VisualEditor expects the captcha key here as well
+$wgConfirmEditConfig = [
+    "hCaptchaSiteKey" => $wgHCaptchaSiteKey,
+    'hCaptchaScriptURL' => 'https://hcaptcha.com/1/api.js'
+];
