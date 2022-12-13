@@ -1,12 +1,10 @@
-FROM mediawiki:1.38
+FROM mediawiki:1.38-fpm
 
-WORKDIR .
-
-# Copy our extensions to the image
+# Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
 
 # Copy custom LocalSettings.php
-COPY ./LocalSettings.php /var/www/html/LocalSettings.php
+COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
 
 # Composer
 RUN apt update
@@ -14,13 +12,26 @@ RUN apt install zip unzip
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 # Semantic Mediawiki
-COPY ./composer.local.json /var/www/html/composer.local.json
+COPY ./conf/composer.local.json /var/www/html/composer.local.json
 RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer-merge-plugin
 RUN /usr/local/bin/composer require --no-update mediawiki/semantic-media-wiki
 RUN /usr/local/bin/composer update --no-dev
 
-# Amazon LB IPs
-RUN a2enmod remoteip
-RUN echo 'RemoteIPHeader X-Forwarded-For\n\
-RemoteIPTrustedProxy 10.0.0.0/16' > /etc/apache2/conf-available/remoteip.conf
-RUN a2enconf remoteip
+# NGINX
+RUN apt-get update -y \
+    && apt-get install -y nginx
+
+# Custom NGINX configuration
+COPY ./conf/nginx.conf /etc/nginx/sites-enabled/default
+
+
+# Supervisor daemon
+RUN apt-get update && \
+    apt-get install -y supervisor --no-install-recommends
+
+COPY ./conf/supervisord.conf /etc/supervisor/conf.d/
+
+# Custom entrypoint
+COPY entrypoint.sh /etc/entrypoint.sh
+RUN chmod +x /etc/entrypoint.sh
+ENTRYPOINT ["/etc/entrypoint.sh"]

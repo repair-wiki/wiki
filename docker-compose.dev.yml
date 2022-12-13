@@ -7,10 +7,13 @@ services:
       - ./data/images:/var/www/html/images
       # Extensions with customizations, others are copied on image build
       - ./extensions/PageForms:/var/www/html/extensions/PageForms
+      - ./extensions/ConfirmEdit:/var/www/html/extensions/ConfirmEdit
       # Settings
-      - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      - ./conf/LocalSettings.php:/var/www/html/LocalSettings.php
       # Semantics Configuration
       - ./data/semantics:/var/www/html/semantics_config
+      # Nginx configuration
+      - ./conf/nginx.conf:/etc/nginx/sites-enabled/default
     ports:
       - "${WIKI_PORT}:80"
     environment:

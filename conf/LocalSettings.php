@@ -14,8 +14,6 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
-
-
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
@@ -31,6 +29,9 @@ $wgScriptPath = "";
 
 # Article path
 $wgArticlePath = "/w/$1";
+
+#pathinfo
+$wgUsePathInfo = true;
 
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = getenv('FULL_URL');
@@ -174,15 +175,6 @@ wfLoadExtension( 'DeleteBatch' );
 
 # Extension configuration
 
-## ConfirmEdit/QuestyCaptcha
-
-$wgCaptchaTriggers['edit'] = true; 
-$wgCaptchaTriggers['create'] = true; 
-$wgCaptchaTriggers['createtalk'] = true;
-$wgCaptchaTriggers['addurl'] = true;
-$wgCaptchaTriggers['createaccount'] = true;
-$wgCaptchaTriggers['badlogin'] = true;
-
 ## Discord Webhook
 $wgDiscordWebhookURL = [ getenv('DISCORD_WEBHOOK') ];
 
@@ -191,7 +183,6 @@ $wgSharedTables[] = 'global_user_groups';
 
 ## VisualEditor
 $wgVirtualRestConfig['modules']['parsoid'] = array(
-    'url' =>  $wgServer . $wgScriptPath . '/rest.php',
 );
 
 ## Semantic Mediawki
@@ -228,28 +219,39 @@ $wgGroupPermissions['sysop']['renameuser'] = true;
 ## Bureaucrat
 $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
-
 ## No Captcha
 $wgGroupPermissions['no-captcha']['skipcaptcha'] = true;
 
 # Email
 
-## TODO!
+$wgSMTP = [
+    'host'     => getenv("WIKI_EMAIL_HOST"), // could also be an IP address. Where the SMTP server is located. If using SSL or TLS, add the prefix "ssl://" or "tls://".
+    'IDHost'   => getenv("WIKI_EMAIL_IDHOST"),      // Generally this will be the domain name of your website (aka mywiki.org)
+    'port'     => 587,                // Port to use when connecting to the SMTP server
+    'auth'     => true,               // Should we use SMTP authentication (true or false)
+    'username' => getenv("WIKI_EMAIL_USER"),     // Username to use for SMTP authentication (if being used)
+    'password' => getenv("WIKI_EMAIL_PASSWORD") // Password to use for SMTP authentication (if being used)
+];
 
-# Dev
-$wgShowExceptionDetails = true;
+$wgEmergencyContact = 'team@repair.wiki';
+$wgPasswordSender = 'no-reply@repair.wiki';
+
 
 $wgUpgradeKey = getenv('WIKI_UPGRADE_KEY');
 
 $wgReadOnly = getenv('WIKI_READ_ONLY');
 
+# Captcha
+
 wfLoadExtensions([ 'ConfirmEdit', 'ConfirmEdit/hCaptcha' ]);
 
+$wgHCaptchaSendRemoteIP = true;
 $wgHCaptchaSiteKey = '9482d04e-48d5-44a4-a74a-764c4f11bf20';
 $wgHCaptchaSecretKey = getenv('WIKI_CAPTCHA_KEY');
 
-# For some reason the VisualEditor expects the captcha key here as well
-$wgConfirmEditConfig = [
-    "hCaptchaSiteKey" => $wgHCaptchaSiteKey,
-    'hCaptchaScriptURL' => 'https://hcaptcha.com/1/api.js'
-];
+$wgCaptchaTriggers['edit'] = true; 
+$wgCaptchaTriggers['create'] = true; 
+$wgCaptchaTriggers['createtalk'] = true;
+$wgCaptchaTriggers['addurl'] = true;
+$wgCaptchaTriggers['createaccount'] = true;
+$wgCaptchaTriggers['badlogin'] = true;

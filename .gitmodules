@@ -34,3 +34,6 @@
 [submodule "extensions/DeleteBatch"]
 	path = extensions/DeleteBatch
 	url = git@github.com:wikimedia/mediawiki-extensions-DeleteBatch.git
+[submodule "extensions/ConfirmEdit"]
+	path = extensions/ConfirmEdit
+	url = git@github.com:repair-wiki/mediawiki-extensions-ConfirmEdit.git
