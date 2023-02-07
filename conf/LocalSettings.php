@@ -255,3 +255,6 @@ $wgCaptchaTriggers['createtalk'] = true;
 $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
+
+// 10kx10k
+$wgMaxImageArea = 10e7;
