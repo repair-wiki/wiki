@@ -37,3 +37,6 @@
 [submodule "extensions/ConfirmEdit"]
 	path = extensions/ConfirmEdit
 	url = git@github.com:repair-wiki/mediawiki-extensions-ConfirmEdit.git
+[submodule "extensions/VEForAll"]
+	path = extensions/VEForAll
+	url = git@github.com:wikimedia/mediawiki-extensions-VEForAll.git

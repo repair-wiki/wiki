@@ -171,7 +171,7 @@ wfLoadExtension( 'TabberNeue' );
 wfLoadExtension( 'SemanticMediaWiki' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'DeleteBatch' );
-
+wfLoadExtension( 'VEForAll' );
 
 # Extension configuration
 
