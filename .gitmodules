@@ -4,7 +4,7 @@
 [submodule "extensions/Discord"]
 	path = extensions/Discord
 	url = git@github.com:jayktaylor/mw-discord.git
-	branch = REL1_39
+	branch = master
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = git@github.com:wikimedia/mediawiki-extensions-MobileFrontend.git
@@ -34,10 +34,9 @@
 [submodule "extensions/DeleteBatch"]
 	path = extensions/DeleteBatch
 	url = git@github.com:wikimedia/mediawiki-extensions-DeleteBatch.git
-[submodule "extensions/ConfirmEdit"]
-	path = extensions/ConfirmEdit
-	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
-	branch = REL1_39
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = git@github.com:wikimedia/mediawiki-extensions-VEForAll.git
+[submodule "extensions/ConfirmEdit"]
+	path = extensions/ConfirmEdit
+	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
