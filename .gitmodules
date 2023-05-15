@@ -15,6 +15,7 @@
 [submodule "extensions/Popups"]
 	path = extensions/Popups
 	url = git@github.com:wikimedia/mediawiki-extensions-Popups.git
+	branch = REL1_39
 [submodule "extensions/Echo"]
 	path = extensions/Echo
 	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
@@ -22,9 +23,11 @@
 [submodule "extensions/LoginNotify"]
 	path = extensions/LoginNotify
 	url = git@github.com:wikimedia/mediawiki-extensions-LoginNotify.git
+	branch = REL1_39
 [submodule "extensions/NativeSvgHandler"]
 	path = extensions/NativeSvgHandler
 	url = git@github.com:wikimedia/mediawiki-extensions-NativeSvgHandler.git
+	branch = REL1_39
 [submodule "extensions/DynamicPageList3"]
 	path = extensions/DynamicPageList3
 	url = git@github.com:Universal-Omega/DynamicPageList3.git
@@ -34,9 +37,12 @@
 [submodule "extensions/DeleteBatch"]
 	path = extensions/DeleteBatch
 	url = git@github.com:wikimedia/mediawiki-extensions-DeleteBatch.git
+	branch = REL1_39
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = git@github.com:wikimedia/mediawiki-extensions-VEForAll.git
+	branch = REL1_39
 [submodule "extensions/ConfirmEdit"]
 	path = extensions/ConfirmEdit
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
+	branch = REL1_39
