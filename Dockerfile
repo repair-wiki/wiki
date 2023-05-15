@@ -1,4 +1,8 @@
-FROM mediawiki:1.39-fpm
+FROM mediawiki:1.39.3-fpm
+
+# Apply custom patches
+COPY ./patches/ /var/www/html/patches/
+RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
 
 # Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
