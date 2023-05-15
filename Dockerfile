@@ -1,4 +1,4 @@
-FROM mediawiki:1.38-fpm
+FROM mediawiki:1.39-fpm
 
 # Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
