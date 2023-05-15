@@ -44,6 +44,9 @@ $wgLogos = [
 	'icon' => "$wgResourceBasePath/images/repair_preservation_group.svg",
 ];
 
+$wgShowDebug = false;
+$wgDevelopmentWarnings = false;
+
 ## UPO means: this is also a user preference option
 
 $wgEnableEmail = true;

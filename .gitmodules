@@ -4,11 +4,11 @@
 [submodule "extensions/Discord"]
 	path = extensions/Discord
 	url = git@github.com:jayktaylor/mw-discord.git
-	branch = REL1_38
+	branch = REL1_39
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
 	url = git@github.com:wikimedia/mediawiki-extensions-MobileFrontend.git
-	branch = REL1_38
+	branch = REL1_39
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = git@github.com:StarCitizenTools/mediawiki-extensions-TabberNeue.git
@@ -18,7 +18,7 @@
 [submodule "extensions/Echo"]
 	path = extensions/Echo
 	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
-	branch = REL1_38
+	branch = REL1_39
 [submodule "extensions/LoginNotify"]
 	path = extensions/LoginNotify
 	url = git@github.com:wikimedia/mediawiki-extensions-LoginNotify.git
@@ -36,7 +36,8 @@
 	url = git@github.com:wikimedia/mediawiki-extensions-DeleteBatch.git
 [submodule "extensions/ConfirmEdit"]
 	path = extensions/ConfirmEdit
-	url = git@github.com:repair-wiki/mediawiki-extensions-ConfirmEdit.git
+	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
+	branch = REL1_39
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = git@github.com:wikimedia/mediawiki-extensions-VEForAll.git
