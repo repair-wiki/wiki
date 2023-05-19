@@ -197,12 +197,6 @@ enableSemantics(getenv('FULL_URL') . "/id/");
 $wgPopupsHideOptInOnPreferencesPage = true;
 $wgPopupsReferencePreviewsBetaFeature = false;
 
-## VEForAll
-
-$wgHooks['VEForAllToolbarConfigNormal'][] = function( &$defaultConfigNormal ) {
-        $defaultConfigNormal[4]['include'][] = 'media';
-};
-
 # Permissions
 
 ## ALL
