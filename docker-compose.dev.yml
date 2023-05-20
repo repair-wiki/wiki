@@ -27,7 +27,7 @@ services:
       - FULL_URL=http://localhost:${WIKI_PORT}
       - MEDIAWIKI_SECRET
   db:
-    image: mariadb
+    image: mariadb:10.6.13
     restart: always
     environment:
       MYSQL_DATABASE: "${DB_NAME}"
