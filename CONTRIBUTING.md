@@ -8,6 +8,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 <!-- omit in toc -->
 ## Table of Contents
 
+- [Issue trackers](#issue-trackers)
 - [I Have a Question](#i-have-a-question)
 - [I Want To Contribute](#i-want-to-contribute)
 - [Reporting Bugs](#reporting-bugs)
@@ -18,17 +19,24 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 - [Commit Messages](#commit-messages)
 - [Join The Project Team](#join-the-project-team)
 
+## Issue trackers
 
+The Repair wiki uses 2 different issue trackers for different purposes.
+
+- [repair-wiki/wiki](https://github.com/repair-wiki/wiki/issues) - Used for issues related to the codebase.
+- [repair-wiki/wiki-issues](https://github.com/repair-wiki/wiki-issues/issues) - Used for non-code related issues and feature requests.
+
+These issue trackers are combined into a [GitHub project view](https://github.com/orgs/repair-wiki/projects/2).
 
 ## I Have a Question
 
 > If you want to ask a question, we assume that you have read the available [Documentation](https://github.com/repair-wiki/wiki/wiki).
 
-Before you ask a question, it is best to search for existing [Issues](https://github.com/orgs/repair-wiki/projects/2) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
+Before you ask a question, it is best to search for existing issues in the [issue trackers](#issue-trackers) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Open an [Issue](https://github.com/repair-wiki/wiki/issues/new).
+- Open an issue in one of the [issue trackers](#issue-trackers).
 - Provide as much context as you can about what you're running into.
 
 We will then take care of the issue as soon as possible.
@@ -61,7 +69,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [Issue](https://github.com/repair-wiki/wiki/issues/new). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Open an issue in one of the [issue trackers](#issue-trackers). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
 - Explain the behavior you would expect and the actual behavior.
 - Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 - Provide the information you collected in the previous section.
@@ -98,7 +106,6 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/repair
 ### Your First Code Contribution
 
 Find more information about setting up a development environment [here](https://github.com/repair-wiki/wiki/wiki/Setting-up-a-development-environment).
-
 
 <!-- omit in toc -->
 ## Attribution
