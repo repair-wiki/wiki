@@ -2,7 +2,7 @@
 
 This mono-repository contains the code and containers for the Repair Preservation Group wiki.
 
-# Structure
+## Structure
 - conf/
   - Configuration files
 - extensions/
@@ -16,13 +16,13 @@ This mono-repository contains the code and containers for the Repair Preservatio
 - docker-compose.dev.yml
   - Docker development container configuration
 
-# Usage (Development)
+## Usage (Development)
 
 Check out the following resources:
 
 - [Instructions for setting up a development environment](https://github.com/repair-wiki/wiki/wiki/Setting-up-a-development-environment)
 - [Helpful resources](https://github.com/repair-wiki/wiki/wiki/Resources)
   
-# Contributing
+## Contributing
 
 See the [CONTRIBUTING.md](https://github.com/repair-wiki/wiki/blob/main/CONTRIBUTING.md) file for more information.
