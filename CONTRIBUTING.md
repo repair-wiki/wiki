@@ -94,7 +94,7 @@ This section guides you through submitting an enhancement suggestion for Repair 
 <!-- omit in toc -->
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/repair-wiki/wiki/issues).
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/repair-wiki/wiki-issues/issues).
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
