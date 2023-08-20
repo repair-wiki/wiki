@@ -9,7 +9,7 @@ This mono-repository contains the code and containers for the Repair Preservatio
   - Mediawiki extensions
 - patches/
   - Patches for the default Mediawiki container, run at container build
-- scripts
+- scripts/
   - Development scripts
 - Dockerfile
   - Docker configuration
