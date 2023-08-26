@@ -1,0 +1,11 @@
+Original source: https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/core/+/227104214218eb9152abf88a302a14cd415d970c%5E%21/#F0
+
+MediaWiki is licensed under the terms of the GNU General Public License,
+version 2 or later. Derivative works and later versions of the code must be
+free software licensed under the same or a compatible license. This includes
+"extensions" that use MediaWiki functions or variables; see
+https://www.gnu.org/licenses/gpl-faq.html#GPLAndPlugins for details.
+
+For the full text of version 2 of the license, see
+https://www.gnu.org/licenses/gpl-2.0.html or '''GNU General Public License'''
+below.
