@@ -46,3 +46,11 @@
 	path = extensions/ConfirmEdit
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
 	branch = REL1_39
+[submodule "extensions/StopForumSpam"]
+	path = extensions/StopForumSpam
+	url = git@github.com:wikimedia/mediawiki-extensions-StopForumSpam.git
+	branch = REL1_39
+[submodule "extensions/AbuseFilter"]
+	path = extensions/AbuseFilter
+	url = git@github.com:wikimedia/mediawiki-extensions-AbuseFilter.git
+	branch = REL1_39
