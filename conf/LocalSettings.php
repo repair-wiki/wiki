@@ -175,6 +175,8 @@ wfLoadExtension( 'SemanticMediaWiki' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'DeleteBatch' );
 wfLoadExtension( 'VEForAll' );
+wfLoadExtension( 'AbuseFilter' );
+wfLoadExtension( 'StopForumSpam' );
 
 # Extension configuration
 
@@ -258,6 +260,10 @@ $wgCaptchaTriggers['createtalk'] = true;
 $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
+
+# StopForumSpam
+$wgSFSIPListLocation = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46_all.gz';
+$wgSFSValidateIPListLocationMD5 = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46_all.gz.md5';
 
 // 10kx10k
 $wgMaxImageArea = 10e7;
