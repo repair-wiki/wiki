@@ -58,3 +58,7 @@
 	path = extensions/UploadWizard
 	url = git@github.com:wikimedia/mediawiki-extensions-UploadWizard.git
 	branch = REL1_39
+[submodule "extensions/ConfirmAccount"]
+	path = extensions/ConfirmAccount
+	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmAccount.git
+	branch = REL1_39
