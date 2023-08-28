@@ -40,6 +40,8 @@ $wgServer = getenv('FULL_URL');
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
+$wgUploadDirectory = "/var/www/html/images/";
+
 $wgLogos = [
 	'1x' => "$wgResourceBasePath/images/repair_preservation_group.svg",
 	'icon' => "$wgResourceBasePath/images/repair_preservation_group.svg",
@@ -177,6 +179,7 @@ wfLoadExtension( 'DeleteBatch' );
 wfLoadExtension( 'VEForAll' );
 wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'StopForumSpam' );
+wfLoadExtension( 'UploadWizard' );
 
 # Extension configuration
 

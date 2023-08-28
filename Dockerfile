@@ -15,7 +15,7 @@ COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
 
 # Composer
 RUN apt update
-RUN apt install zip unzip wget busybox
+RUN apt install zip unzip
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 # Semantic Mediawiki
@@ -45,6 +45,12 @@ RUN mkdir /wiki/cron
 ADD cron/update_spamlist.sh /wiki/cron/update_spamlist.sh
 RUN chmod 0644 /wiki/cron/update_spamlist.sh
 RUN crontab -l | { cat; echo "0 0 * * * bash /wiki/cron/update_spamlist.sh"; } | crontab -
+
+# Imagemagick
+RUN apt-get install -y imagemagick --no-install-recommends
+
+# Image directory
+RUN chmod 766 /var/www/html/images
 
 # Custom entrypoint
 COPY entrypoint.sh /etc/entrypoint.sh
