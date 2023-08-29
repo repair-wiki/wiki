@@ -17,6 +17,7 @@ services:
     ports:
       - "${WIKI_PORT}:80"
     environment:
+      - WIKI_ENV=Dev
       - DB_TYPE=mysql
       - DB_SERVER=db
       - DB_NAME
@@ -26,6 +27,8 @@ services:
       - ADMIN_PASS
       - FULL_URL=http://localhost:${WIKI_PORT}
       - MEDIAWIKI_SECRET
+      - WIKI_CAPTCHA_KEY
+      - WIKI_CAPTCHA_SITE
   db:
     image: mariadb:10.6.13
     restart: always
