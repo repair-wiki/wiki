@@ -40,6 +40,8 @@ $wgServer = getenv('FULL_URL');
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
+$wgUploadDirectory = "/var/www/html/images/";
+
 $wgLogos = [
 	'1x' => "$wgResourceBasePath/images/repair_preservation_group.svg",
 	'icon' => "$wgResourceBasePath/images/repair_preservation_group.svg",
@@ -175,6 +177,11 @@ wfLoadExtension( 'SemanticMediaWiki' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'DeleteBatch' );
 wfLoadExtension( 'VEForAll' );
+wfLoadExtension( 'AbuseFilter' );
+wfLoadExtension( 'StopForumSpam' );
+wfLoadExtension( 'UploadWizard' );
+wfLoadExtension( 'ConfirmAccount' );
+
 
 # Extension configuration
 
@@ -202,6 +209,7 @@ $wgPopupsReferencePreviewsBetaFeature = false;
 $wgGroupPermissions['*']['skipcaptcha'] = false;
 $wgGroupPermissions['*']['writeapi'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
+$wgGroupPermissions['*']['createaccount'] = false; // ConfirmAccount
 
 ## User
 $wgGroupPermissions['user']['skipcaptcha'] = false;
@@ -221,6 +229,7 @@ $wgGroupPermissions['sysop']['renameuser'] = true;
 
 ## Bureaucrat
 $wgGroupPermissions['bureaucrat']['usermerge'] = true;
+$wgGroupPermissions['bureaucrat']['createaccount'] = true;
 
 ## No Captcha
 $wgGroupPermissions['no-captcha']['skipcaptcha'] = true;
@@ -258,6 +267,25 @@ $wgCaptchaTriggers['createtalk'] = true;
 $wgCaptchaTriggers['addurl'] = true;
 $wgCaptchaTriggers['createaccount'] = true;
 $wgCaptchaTriggers['badlogin'] = true;
+
+# StopForumSpam
+$wgSFSIPListLocation = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46_all.gz';
+$wgSFSValidateIPListLocationMD5 = 'https://www.stopforumspam.com/downloads/listed_ip_90_ipv46_all.gz.md5';
+
+# ConfirmAccount
+$wgMakeUserPageFromBio = false;
+$wgAutoWelcomeNewUsers = false;
+$wgConfirmAccountRequestFormItems = [
+    'UserName'        => [ 'enabled' => true ],
+    'RealName'        => [ 'enabled' => false ],
+    'Biography'       => [ 'enabled' => false, 'minWords' => 50 ],
+    'AreasOfInterest' => [ 'enabled' => false ],
+    'CV'              => [ 'enabled' => false ],
+    'Notes'           => [ 'enabled' => true ],
+    'Links'           => [ 'enabled' => false ],
+    'TermsOfService'  => [ 'enabled' => false ],
+];
+$wgConfirmAccountContact = "no-reply@repair.wiki";
 
 // 10kx10k
 $wgMaxImageArea = 10e7;

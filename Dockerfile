@@ -1,5 +1,8 @@
 FROM mediawiki:1.39.3-fpm
 
+# Create script directory
+RUN mkdir /wiki/
+
 # Apply custom patches
 COPY ./patches/ /var/www/html/patches/
 RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
@@ -29,12 +32,25 @@ RUN apt-get update -y \
 # Custom NGINX configuration
 COPY ./conf/nginx.conf /etc/nginx/sites-enabled/default
 
-
 # Supervisor daemon
 RUN apt-get update && \
     apt-get install -y supervisor --no-install-recommends
 
 COPY ./conf/supervisord.conf /etc/supervisor/conf.d/
+
+# Cron
+RUN apt-get install -y cron --no-install-recommends
+
+RUN mkdir /wiki/cron
+ADD cron/update_spamlist.sh /wiki/cron/update_spamlist.sh
+RUN chmod 0644 /wiki/cron/update_spamlist.sh
+RUN crontab -l | { cat; echo "0 0 * * * bash /wiki/cron/update_spamlist.sh"; } | crontab -
+
+# Imagemagick
+RUN apt-get install -y imagemagick --no-install-recommends
+
+# Image directory
+RUN chmod 766 /var/www/html/images
 
 # Custom entrypoint
 COPY entrypoint.sh /etc/entrypoint.sh
