@@ -65,3 +65,6 @@
 [submodule "skins/Citizen"]
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
+[submodule "extensions/SimpleBatchUpload"]
+	path = extensions/SimpleBatchUpload
+	url = https://github.com/ProfessionalWiki/SimpleBatchUpload.git

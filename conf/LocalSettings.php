@@ -188,7 +188,7 @@ wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'StopForumSpam' );
 wfLoadExtension( 'UploadWizard' );
 wfLoadExtension( 'ConfirmAccount' );
-
+wfLoadExtension( 'SimpleBatchUpload' );
 
 # Extension configuration
 
