@@ -131,15 +131,16 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, e.g. 'vector' or 'monobook':
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = "citizen";
+$wgDefaultMobileSkin = 'citizen';
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkin( 'MinervaNeue' );
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Timeless' );
-wfLoadSkin( 'Vector' );
-
+#wfLoadSkin( 'MinervaNeue' );
+#wfLoadSkin( 'MonoBook' );
+#wfLoadSkin( 'Timeless' );
+#wfLoadSkin( 'Vector' );
+wfLoadSkin( 'Citizen' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -293,5 +294,29 @@ $wgConfirmAccountRequestFormItems = [
 ];
 $wgConfirmAccountContact = "no-reply@repair.wiki";
 
+# UploadWizard
+$wgUploadWizardConfig = [
+	'debug' => false,
+	'autoAdd' => [
+	 	'wikitext' => [
+			'Uploaded with Wizard.'
+			],
+	 	'categories' => [],
+		], // Should be localised to the language of your wiki instance
+	'feedbackLink' => false, // Disable the link for feedback (default: points to Commons)
+	'alternativeUploadToolsPage' => false, // Disable the link to alternative upload tools (default: points to Commons)
+	'enableFormData' => true, // Enable FileAPI uploads be used on supported browsers
+	'enableMultipleFiles' => true,
+	'enableMultiFileSelect' => false,
+	'tutorial' => [
+	 	'skip' => true
+		], // Skip the tutorial
+	'fileExtensions' => $wgFileExtensions // omitting this may cause errors
+	];
+
+    $wgExtensionFunctions[] = function() {
+        $GLOBALS['wgUploadNavigationUrl'] = SpecialPage::getTitleFor( 'UploadWizard' )->getLocalURL();
+        return true;
+    };
 // 10kx10k
 $wgMaxImageArea = 10e7;
