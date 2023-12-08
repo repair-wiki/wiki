@@ -62,3 +62,9 @@
 	path = extensions/ConfirmAccount
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmAccount.git
 	branch = REL1_39
+[submodule "skins/Citizen"]
+	path = skins/Citizen
+	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
+[submodule "extensions/SimpleBatchUpload"]
+	path = extensions/SimpleBatchUpload
+	url = https://github.com/ProfessionalWiki/SimpleBatchUpload.git

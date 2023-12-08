@@ -1,14 +1,17 @@
-FROM mediawiki:1.39.3-fpm
+FROM mediawiki:1.39.4-fpm
 
 # Create script directory
 RUN mkdir /wiki/
 
 # Apply custom patches
-COPY ./patches/ /var/www/html/patches/
-RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
+#COPY ./patches/ /var/www/html/patches/
+#RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
 
 # Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
+
+# Copy skins to the image
+COPY ./skins/ /var/www/html/skins/
 
 # Copy custom LocalSettings.php
 COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
@@ -42,9 +45,16 @@ COPY ./conf/supervisord.conf /etc/supervisor/conf.d/
 RUN apt-get install -y cron --no-install-recommends
 
 RUN mkdir /wiki/cron
+
+# Add cron files
 ADD cron/update_spamlist.sh /wiki/cron/update_spamlist.sh
+ADD cron/run_jobs.sh /wiki/cron/run_jobs.sh
+# Update permissions
 RUN chmod 0644 /wiki/cron/update_spamlist.sh
+
+# Update crontab
 RUN crontab -l | { cat; echo "0 0 * * * bash /wiki/cron/update_spamlist.sh"; } | crontab -
+RUN crontab -l | { cat; echo "0 * * * * bash /wiki/cron/run_jobs.sh"; } | crontab -
 
 # Imagemagick
 RUN apt-get install -y imagemagick --no-install-recommends
