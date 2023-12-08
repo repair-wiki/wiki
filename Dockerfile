@@ -25,7 +25,6 @@ COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 COPY ./conf/composer.local.json /var/www/html/composer.local.json
 RUN chown -R root ./composer.json
 RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer-merge-plugin
-RUN /usr/local/bin/composer require --no-update mediawiki/semantic-media-wiki
 RUN /usr/local/bin/composer update --no-dev
 
 # NGINX
