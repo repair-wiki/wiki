@@ -1,4 +1,4 @@
-FROM mediawiki:1.39.4-fpm
+FROM mediawiki:1.39.5-fpm
 
 # Create script directory
 RUN mkdir /wiki/

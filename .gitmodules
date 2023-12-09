@@ -5,10 +5,6 @@
 	path = extensions/Discord
 	url = git@github.com:jayktaylor/mw-discord.git
 	branch = master
-[submodule "extensions/MobileFrontend"]
-	path = extensions/MobileFrontend
-	url = git@github.com:wikimedia/mediawiki-extensions-MobileFrontend.git
-	branch = REL1_39
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = git@github.com:StarCitizenTools/mediawiki-extensions-TabberNeue.git

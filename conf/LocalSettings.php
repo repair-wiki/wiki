@@ -132,7 +132,6 @@ $wgDiff3 = "/usr/bin/diff3";
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, e.g. 'vector' or 'monobook':
 $wgDefaultSkin = "citizen";
-$wgDefaultMobileSkin = 'citizen';
 
 # Enabled skins.
 # The following skins were automatically enabled:
@@ -178,7 +177,6 @@ wfLoadExtension( 'Discord' );
 wfLoadExtension( 'PageForms' );
 wfLoadExtension( 'Popups' );
 wfLoadExtension( 'Echo' );
-wfLoadExtension( 'MobileFrontend' );
 wfLoadExtension( 'TabberNeue' );
 wfLoadExtension( 'SemanticMediaWiki' );
 wfLoadExtension( 'VisualEditor' );
