@@ -184,9 +184,9 @@ wfLoadExtension( 'DeleteBatch' );
 wfLoadExtension( 'VEForAll' );
 wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'StopForumSpam' );
-wfLoadExtension( 'UploadWizard' );
 wfLoadExtension( 'ConfirmAccount' );
 wfLoadExtension( 'SimpleBatchUpload' );
+wfLoadExtension( 'CategoryTree' );
 
 # Extension configuration
 

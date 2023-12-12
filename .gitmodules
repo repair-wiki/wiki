@@ -50,10 +50,6 @@
 	path = extensions/AbuseFilter
 	url = git@github.com:wikimedia/mediawiki-extensions-AbuseFilter.git
 	branch = REL1_39
-[submodule "extensions/UploadWizard"]
-	path = extensions/UploadWizard
-	url = git@github.com:wikimedia/mediawiki-extensions-UploadWizard.git
-	branch = REL1_39
 [submodule "extensions/ConfirmAccount"]
 	path = extensions/ConfirmAccount
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmAccount.git
@@ -64,3 +60,7 @@
 [submodule "extensions/SimpleBatchUpload"]
 	path = extensions/SimpleBatchUpload
 	url = https://github.com/ProfessionalWiki/SimpleBatchUpload.git
+[submodule "extensions/CategoryTree"]
+	path = extensions/CategoryTree
+	url = git@github.com:wikimedia/mediawiki-extensions-CategoryTree.git
+	branch = REL1_39
