@@ -215,10 +215,12 @@ $wgGroupPermissions['*']['skipcaptcha'] = false;
 $wgGroupPermissions['*']['writeapi'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
 $wgGroupPermissions['*']['createaccount'] = false; // ConfirmAccount
+$wgGroupPermissions['*']['edit'] = false;
 
 ## User
 $wgGroupPermissions['user']['skipcaptcha'] = false;
 $wgGroupPermissions['user']['writeapi'] = true;
+$wgGroupPermissions['user']['edit'] = true;
 
 ## AutoConfirmed
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = false;
