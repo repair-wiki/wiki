@@ -1,4 +1,10 @@
-FROM mediawiki:1.39.5-fpm
+ARG mediawiki_version=1.39.5-fpm
+ARG composer_version=2.7.1
+
+# Trick to allow for COPY from for composer image
+FROM composer:${composer_version} as composer
+
+FROM mediawiki:${mediawiki_version}
 
 # Create script directory
 RUN mkdir /wiki/
@@ -19,11 +25,12 @@ COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
 # Composer
 RUN apt update
 RUN apt install zip unzip
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
 # Semantic Mediawiki
 COPY ./conf/composer.local.json /var/www/html/composer.local.json
 RUN chown -R root ./composer.json
+ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN /usr/local/bin/composer config --no-plugins allow-plugins.wikimedia/composer-merge-plugin
 RUN /usr/local/bin/composer update --no-dev
 
@@ -48,6 +55,7 @@ RUN mkdir /wiki/cron
 # Add cron files
 ADD cron/update_spamlist.sh /wiki/cron/update_spamlist.sh
 ADD cron/run_jobs.sh /wiki/cron/run_jobs.sh
+
 # Update permissions
 RUN chmod 0644 /wiki/cron/update_spamlist.sh
 
