@@ -10,8 +10,8 @@ FROM mediawiki:${mediawiki_version}
 RUN mkdir /wiki/
 
 # Apply custom patches
-#COPY ./patches/ /var/www/html/patches/
-#RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
+COPY ./patches/ /var/www/html/patches/
+RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
 
 # Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
