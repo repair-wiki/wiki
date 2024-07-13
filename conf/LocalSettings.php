@@ -320,3 +320,6 @@ $wgUploadWizardConfig = [
     };
 // 10kx10k
 $wgMaxImageArea = 10e7;
+
+# Hopefully this shouldn't affect production in any bad way
+$wgCanonicalServer = 'http://localhost:80';
