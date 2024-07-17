@@ -187,6 +187,7 @@ wfLoadExtension( 'StopForumSpam' );
 wfLoadExtension( 'ConfirmAccount' );
 wfLoadExtension( 'SimpleBatchUpload' );
 wfLoadExtension( 'CategoryTree' );
+wfLoadExtension( 'SmiteSpam' );
 
 # Extension configuration
 

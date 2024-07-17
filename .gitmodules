@@ -66,3 +66,7 @@
 	path = extensions/CategoryTree
 	url = git@github.com:wikimedia/mediawiki-extensions-CategoryTree.git
 	branch = REL1_42
+[submodule "extensions/SmiteSpam"]
+	path = extensions/SmiteSpam
+	url = git@github.com:wikimedia/mediawiki-extensions-SmiteSpam.git
+	branch = REL1_42
