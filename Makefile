@@ -6,6 +6,9 @@ init:
 update:
 	sh scripts/update-dev.sh
 
+run-jobs:
+	sh scripts/run-jobs.sh
+	
 run:
 	docker compose --file=./docker-compose.dev.yml up --build
 
