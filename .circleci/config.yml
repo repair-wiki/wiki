@@ -16,7 +16,9 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            pip install \
+            apk add --no-cache \
+              python3
+            pip3 install \
               awscli
       - restore_cache:
           keys:
