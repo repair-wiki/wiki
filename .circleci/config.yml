@@ -17,9 +17,10 @@ jobs:
           name: Install dependencies
           command: |
             apk add --no-cache \
-              python3
-            pip3 install \
+              pipx
+            pipx install \
               awscli
+            export PATH=$PATH:/root/.local/bin
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
