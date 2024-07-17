@@ -215,7 +215,6 @@ $wgPopupsReferencePreviewsBetaFeature = false;
 $wgGroupPermissions['*']['skipcaptcha'] = false;
 $wgGroupPermissions['*']['writeapi'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
-$wgGroupPermissions['*']['createaccount'] = false; // ConfirmAccount
 $wgGroupPermissions['*']['edit'] = false;
 
 ## User
