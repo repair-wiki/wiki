@@ -187,6 +187,7 @@ wfLoadExtension( 'StopForumSpam' );
 wfLoadExtension( 'ConfirmAccount' );
 wfLoadExtension( 'SimpleBatchUpload' );
 wfLoadExtension( 'CategoryTree' );
+wfLoadExtension( 'SmiteSpam' );
 
 # Extension configuration
 
@@ -214,7 +215,6 @@ $wgPopupsReferencePreviewsBetaFeature = false;
 $wgGroupPermissions['*']['skipcaptcha'] = false;
 $wgGroupPermissions['*']['writeapi'] = true;
 $wgGroupPermissions['*']['viewedittab'] = true;
-$wgGroupPermissions['*']['createaccount'] = false; // ConfirmAccount
 $wgGroupPermissions['*']['edit'] = false;
 
 ## User
