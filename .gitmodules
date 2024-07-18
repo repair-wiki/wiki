@@ -13,7 +13,7 @@
 [submodule "extensions/Popups"]
 	path = extensions/Popups
 	url = git@github.com:wikimedia/mediawiki-extensions-Popups.git
-	branch = REL1_40
+	branch = REL1_41
 [submodule "extensions/Echo"]
 	path = extensions/Echo
 	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
