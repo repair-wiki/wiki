@@ -20,7 +20,6 @@ jobs:
               pipx
             pipx install \
               awscli
-            export PATH=$PATH:/root/.local/bin
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
@@ -48,7 +47,7 @@ jobs:
           name: Push application Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "main" ]; then
-              login="$(aws ecr get-login)"
+              login="$(/root/.local/bin/aws ecr get-login)"
               ${login}
               docker tag app "${ECR_ENDPOINT}/wiki:${CIRCLE_SHA1}"
               docker tag app "${ECR_ENDPOINT}/wiki:latest"
