@@ -47,8 +47,11 @@ jobs:
           name: Push application Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "main" ]; then
-              login="$(/root/.local/bin/aws ecr get-login)"
-              ${login}
+              aws ecr get-login-password \
+                  --region eu-central1 \
+                | docker login \
+                    --username AWS \
+                    --password-stdin 637025038750.dkr.ecr.eu-central-1.amazonaws.com
               docker tag app "${ECR_ENDPOINT}/wiki:${CIRCLE_SHA1}"
               docker tag app "${ECR_ENDPOINT}/wiki:latest"
               docker push "${ECR_ENDPOINT}/wiki:${CIRCLE_SHA1}"
