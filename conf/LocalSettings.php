@@ -184,7 +184,7 @@ wfLoadExtension( 'DeleteBatch' );
 wfLoadExtension( 'VEForAll' );
 wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'StopForumSpam' );
-wfLoadExtension( 'ConfirmAccount' );
+#wfLoadExtension( 'ConfirmAccount' );
 wfLoadExtension( 'SimpleBatchUpload' );
 wfLoadExtension( 'CategoryTree' );
 wfLoadExtension( 'SmiteSpam' );
