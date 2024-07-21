@@ -198,8 +198,15 @@ $wgDiscordWebhookURL = [ getenv('DISCORD_WEBHOOK') ];
 $wgSharedTables[] = 'global_user_groups';
 
 ## VisualEditor
-$wgVirtualRestConfig['modules']['parsoid'] = array(
-);
+if (getenv('WIKI_ENV') === 'Dev') {
+    // Fixes issues related to the visual editor not working on anything but port 80
+    $wgVirtualRestConfig['modules']['parsoid'] = array(
+        'url' => 'http://localhost/rest.php'
+    );
+} else {
+    $wgVirtualRestConfig['modules']['parsoid'] = array(
+    );
+}
 
 ## Semantic Mediawki
 $smwgConfigFileDir = $IP . "/semantics_config";
