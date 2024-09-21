@@ -1,7 +1,7 @@
 [submodule "extensions/PageForms"]
 	path = extensions/PageForms
-	url = git@github.com:wikimedia/mediawiki-extensions-PageForms.git
-	branch = REL1_41
+	url = git@github.com:repair-wiki/mediawiki-extensions-PageForms.git
+	branch = master
 [submodule "extensions/Discord"]
 	path = extensions/Discord
 	url = git@github.com:jayktaylor/mw-discord.git
