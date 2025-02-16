@@ -27,6 +27,9 @@ services:
       - MEDIAWIKI_SECRET
       - WIKI_CAPTCHA_KEY
       - WIKI_CAPTCHA_SITE
+    networks:
+      - repairwiki-network
+
   db:
     image: mariadb:10.6.13
     restart: always
@@ -37,3 +40,9 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
     volumes:
       - ./data/db:/var/lib/mysql
+    networks:
+      - repairwiki-network
+
+networks:
+  repairwiki-network:
+    name: repairwiki-network
