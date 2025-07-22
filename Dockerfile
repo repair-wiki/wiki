@@ -1,4 +1,4 @@
-ARG mediawiki_version=1.41.2-fpm
+ARG mediawiki_version=1.43.1-fpm
 ARG composer_version=2.7.1
 
 # Trick to allow for COPY from for composer image
@@ -23,8 +23,8 @@ COPY ./skins/ /var/www/html/skins/
 COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
 
 # Composer
-RUN apt update
-RUN apt install zip unzip
+RUN apt update -y
+RUN apt install zip unzip -y
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
 # Semantic Mediawiki

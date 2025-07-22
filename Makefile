@@ -14,3 +14,6 @@ run:
 
 run-bg:
 	docker compose --file=./docker-compose.dev.yml up --build -d
+
+stop:
+	docker compose --file=./docker-compose.dev.yml down
