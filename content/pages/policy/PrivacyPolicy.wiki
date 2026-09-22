@@ -1,0 +1,65 @@
+== Repair Wiki Privacy Policy ==
+Last Updated: November 30, 2023
+
+Welcome to the Repair Wiki Privacy Policy. This document outlines how personal information is collected, used, and protected when you use our wiki platform. By accessing or contributing to the Repair Wiki, you agree to the terms outlined in this Privacy Policy.
+
+== Information We Collect ==
+
+=== Account Information ===
+To contribute to the Repair Wiki, you may need to create an account. When registering, we collect:
+
+* Username
+* Email address (for account verification and communication purposes)
+
+=== Contributions and Interactions ===
+We collect information about your contributions, edits, and interactions with the Repair Wiki, including:
+
+* Edited content
+* Discussions and comments
+* Pages visited
+
+=== Automatically Collected Information ===
+We may collect certain information automatically, such as:
+
+* IP address
+* Browser type
+* Device information
+
+== How We Use Your Information ==
+
+=== Providing and Improving the Wiki ===
+We use the collected information to:
+
+* Enhance and maintain the wiki platform
+* Analyze user behavior to improve content and functionality
+
+=== Communication ===
+We may use your email address to:
+
+* Send important notifications related to your account
+* Provide updates on wiki changes
+* Respond to inquiries or requests
+
+== Information Sharing and Disclosure ==
+We do not sell, trade, or otherwise transfer your personal information to third parties. However, we may share information in the following instances:
+
+* With your consent
+* When required by law
+* To protect the safety and security of users and the wiki
+
+== Data Security ==
+We prioritize the security of your personal information and employ measures to protect against unauthorized access, alteration, disclosure, or destruction.
+
+== Third-Party Links ==
+The Repair Wiki may contain links to third-party websites. We are not responsible for the privacy practices or content of these sites. We encourage users to review the privacy policies of external sites before providing any personal information.
+
+== Children's Privacy ==
+The Repair Wiki is not directed at individuals under the age of 13. We do not knowingly collect personal information from children. If you believe that we have inadvertently collected information from a child, please contact us to rectify the situation.
+
+== Changes to this Privacy Policy ==
+We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. Users will be notified of significant updates, and the latest version will be available on this page.
+
+== Contact Information ==
+For any questions or concerns regarding this Privacy Policy, please contact us at team@repair.wiki.
+
+By using the Repair Wiki, you agree to the terms outlined in this Privacy Policy.

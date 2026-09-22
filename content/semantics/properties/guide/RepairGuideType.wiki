@@ -1,0 +1,10 @@
+This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::Soldering]]
+* [[Allows value::BGA]]
+* [[Allows value::Teardown]]
+* [[Allows value::Software]]
+* [[Allows value::Part replacement]]
+* [[Allows value::Cleaning]]
+* [[Allows value::General]]

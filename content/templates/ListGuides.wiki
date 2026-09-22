@@ -1,0 +1,29 @@
+===Explanatory Guides===
+{{#ask:
+  [[Category:Explanatory guide]]
+  [[Device::{{PAGENAME}}]]
+  |?Explanatory Guide Type=Type
+  |?Repair Guide difficulty=Difficulty
+  |format=table
+}}
+===Repair Guides===
+{{#ask:
+  [[Category:Repair guide]]
+  [[Device::{{PAGENAME}}]]
+  |?Affects part
+  |?Repair Guide type=Type
+  |?Repair Guide difficulty=Difficulty
+  |format=table
+}}
+===Create a Guide===
+{{#tag:inputbox |
+type=create
+width=30
+break=no
+buttonlabel=Create Guide
+inline=true
+editintro=RepairWiki:RepairGuideHelp
+useve=true
+default={{PAGENAME}}
+preload=Template:Repair Guide/Example
+}}

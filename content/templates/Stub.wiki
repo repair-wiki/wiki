@@ -1,0 +1,1 @@
+<div class="stub-notice">This article is a [[:Category:Stubs|stub]]. You can help {{SITENAME}} grow by {{editlink|{{PAGENAME}}|expanding it}}</div><includeonly>[[Category:Stubs]]</includeonly><noinclude>[[Category:Formatting_templates]]</noinclude>

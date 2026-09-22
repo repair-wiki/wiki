@@ -1,0 +1,218 @@
+{
+    "styles": [
+        {
+            "path": "styles/citizen.scss",
+            "page": "MediaWiki:Citizen.css"
+        },
+        {
+            "path": "styles/vector.scss",
+            "page": "MediaWiki:Vector.css"
+        }
+    ],
+    "raw": [
+        {
+            "path": "js/Common.js",
+            "page": "MediaWiki:Common.js"
+        },
+        {
+            "path": "pages/main.wiki",
+            "page": "Main Page"
+        },
+        {
+            "path": "pages/About.wiki",
+            "page": "RepairWiki:About"
+        },
+        {
+            "path": "other/Titleblacklist.wiki",
+            "page": "MediaWiki:Titleblacklist"
+        },
+        {
+            "path": "other/CitizenFooterDesc.wiki",
+            "page": "MediaWiki:Citizen-footer-desc"
+        },
+        {
+            "path": "other/CitizenFooterTagline.wiki",
+            "page": "MediaWiki:Citizen-footer-tagline"
+        },
+        {
+            "path": "templates/frontpage-containers/FrontpageContainerRow.wiki",
+            "page": "Template:FrontpageContainerRow"
+        },
+        {
+            "path": "templates/frontpage-containers/FrontpageContainerColumn.wiki",
+            "page": "Template:FrontpageContainerColumn"
+        },
+        {
+            "path": "templates/frontpage-containers/FrontpageContainerRowLink.wiki",
+            "page": "Template:FrontpageContainerRowLink"
+        },
+        {
+            "path": "templates/frontpage-containers/FrontpageContainerRowLinksGrid.wiki",
+            "page": "Template:FrontpageContainerRowLinksGrid"
+        },
+        {
+            "path": "templates/FrontpageHeader.wiki",
+            "page": "Template:FrontpageHeader"
+        },
+        {
+            "path": "templates/SearchBox.wiki",
+            "page": "Template:SearchBox"
+        },
+        {
+            "path": "templates/ClickableButton.wiki",
+            "page": "Template:Clickable button"
+        },
+        {
+            "path": "templates/FullWidthButton.wiki",
+            "page": "Template:FullWidthButton"
+        },
+        {
+            "path": "templates/Icon.wiki",
+            "page": "Template:Icon"
+        },
+        {
+            "path": "templates/Stub.wiki",
+            "page": "Template:Stub"
+        },
+        {
+            "path": "templates/RepairGuide.wiki",
+            "page": "Template:Repair Guide"
+        },
+        {
+            "path": "templates/ListGuides.wiki",
+            "page": "Template:List guides"
+        },
+        {
+            "path": "templates/Delete.wiki",
+            "page": "Template:Delete"
+        },
+        {
+            "path": "semantics/forms/DevicePage.wiki",
+            "page": "Form:Device page"
+        },
+        {
+            "path": "semantics/forms/ManufacturerPage.wiki",
+            "page": "Form:Manufacturer page"
+        },
+        {
+            "path": "semantics/forms/ExplanatoryGuide.wiki",
+            "page": "Form:Explanatory Guide"
+        },
+        {
+            "path": "semantics/forms/RepairGuide.wiki",
+            "page": "Form:Repair Guide"
+        },
+        {
+            "path": "semantics/properties/device/DeviceType.wiki",
+            "page": "Property:Device type"
+        },
+        {
+            "path": "semantics/properties/device/Manufacturer.wiki",
+            "page": "Property:Manufacturer"
+        },
+        {
+            "path": "semantics/properties/guide/AffectsPart.wiki",
+            "page": "Property:Affects part"
+        },
+        {
+            "path": "semantics/properties/guide/Device.wiki",
+            "page": "Property:Device"
+        },
+        {
+            "path": "semantics/properties/guide/ExplanatoryGuideType.wiki",
+            "page": "Property:Explanatory Guide Type"
+        },
+        {
+            "path": "semantics/properties/guide/NeedsEquipment.wiki",
+            "page": "Property:Needs equipment"
+        },
+        {
+            "path": "semantics/properties/guide/RepairGuideDifficulty.wiki",
+            "page": "Property:Repair Guide difficulty"
+        },
+        {
+            "path": "semantics/properties/guide/RepairGuideType.wiki",
+            "page": "Property:Repair Guide type"
+        },
+        {
+            "path": "templates/pages/DevicePage.wiki",
+            "page": "Template:Device page"
+        },
+        {
+            "path": "templates/pages/CreatePage.wiki",
+            "page": "Template:Create page"
+        },
+        {
+            "path": "templates/pages/create-page/CreatePageDevice.wiki",
+            "page": "Template:Create page/device"
+        },
+        {
+            "path": "templates/pages/create-page/CreatePageGuide.wiki",
+            "page": "Template:Create page/guide"
+        },
+        {
+            "path": "templates/pages/create-page/CreatePageManufacturer.wiki",
+            "page": "Template:Create page/manufacturer"
+        },
+        {
+            "path": "templates/pages/create-page/CreatePageMany.wiki",
+            "page": "Template:Create page/many"
+        },
+        {
+            "path": "templates/examples/DevicePageExample.wiki",
+            "page": "Template:Device page/Example"
+        },
+        {
+            "path": "templates/examples/ManufacturerPageExample.wiki",
+            "page": "Template:Manufacturer page/Example"
+        },
+        {
+            "path": "templates/examples/RepairGuideExample.wiki",
+            "page": "Template:Repair Guide/Example"
+        },
+        {
+            "path": "templates/examples/ExplanatoryGuideExample.wiki",
+            "page": "Template:Explanatory Guide/Example"
+        },
+        {
+            "path": "other/Sidebar.wiki",
+            "page": "MediaWiki:Sidebar"
+        },
+        {
+            "path": "pages/policy/PrivacyPolicy.wiki",
+            "page": "RepairWiki:Privacy policy"
+        },
+        {
+            "path": "pages/policy/TermsOfService.wiki",
+            "page": "RepairWiki:Terms of Service"
+        },
+        {
+            "path": "pages/policy/GeneralDisclaimer.wiki",
+            "page": "RepairWiki:General disclaimer"
+        },
+        {
+            "path": "pages/policy/Disclaimers.wiki",
+            "page": "Disclaimers"
+        },
+        {
+            "path": "pages/policy/PaidContributions.wiki",
+            "page": "RepairWiki:Paid Contributions"
+        },
+        {
+            "path": "pages/policy/Guidelines.wiki",
+            "page": "RepairWiki:Guidelines"
+        },
+        {
+            "path": "pages/Create.wiki",
+            "page": "RepairWiki:Create"
+        },
+        {
+            "path": "templates/image-buttons/FrontpageImageButton.wiki",
+            "page": "Template:FrontpageImageButton"
+        },
+        {
+            "path": "templates/image-buttons/FrontpageImageButtons.wiki",
+            "page": "Template:FrontpageImageButtons"
+        }
+    ]
+}

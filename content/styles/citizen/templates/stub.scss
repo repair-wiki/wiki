@@ -1,0 +1,12 @@
+/* Template:Stub */
+
+.stub-notice {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 $space-lg;
+  padding: $space-xs $space-sm;
+  background: color-mix(in srgb, var(--color-warning) 12%, var(--background-color-base));
+  border: 1px solid color-mix(in srgb, var(--color-warning) 45%, transparent);
+  border-radius: $border-radius--medium;
+  font-size: $font-size-small;
+}

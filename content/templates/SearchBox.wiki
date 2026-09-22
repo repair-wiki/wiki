@@ -1,0 +1,8 @@
+<inputbox>
+type=search
+placeholder=Search Repair Wiki
+searchbuttonlabel=Search
+buttonlabel=Go
+break=no
+fullwidth=yes
+</inputbox>

@@ -1,0 +1,6 @@
+<div class="frontpage-container-column">
+  <div class="frontpage-container-heading">
+    <h2>{{{1}}}</h2>
+  </div>
+  <div class="frontpage-container-content">{{{2}}}</div>
+</div>

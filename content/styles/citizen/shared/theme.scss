@@ -1,0 +1,106 @@
+/* Copper board theme */
+@import './constants.scss';
+
+// Accent colour
+:root {
+  --color-progressive-oklch__h: 52;
+  --color-progressive-oklch__c: 0.115;
+  --color-progressive-hsl__h: 26;
+  --color-progressive-hsl__s: 58%;
+
+  // Copper
+  --rw-copper: oklch(58% 0.115 52);
+
+  // Circuit traces
+  --rw-board: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2'%3E%3Cpath d='M12 0v34a10 10 0 0 0 10 10h38a10 10 0 0 1 10 10v56'/%3E%3Cpath d='M160 66h-44a10 10 0 0 1-10-10V22a10 10 0 0 0-10-10H70'/%3E%3Cpath d='M0 112h30a10 10 0 0 1 10 10v38'/%3E%3Cpath d='M112 160v-28a10 10 0 0 1 10-10h38'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Ccircle cx='70' cy='110' r='4.5'/%3E%3Ccircle cx='12' cy='34' r='4'/%3E%3Ccircle cx='122' cy='122' r='4'/%3E%3Ccircle cx='40' cy='122' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  --rw-board-hero: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='130' viewBox='0 0 220 130'%3E%3Cg fill='none' stroke='%23fff' stroke-width='2'%3E%3Cpath d='M0 26h54a12 12 0 0 1 12 12v22a12 12 0 0 0 12 12h40'/%3E%3Cpath d='M220 52h-40a12 12 0 0 0-12 12v18a12 12 0 0 1-12 12H60'/%3E%3Cpath d='M28 130V96a12 12 0 0 1 12-12h20'/%3E%3Crect x='96' y='36' width='52' height='36' rx='5'/%3E%3Cpath d='M106 36v-8M118 36v-8M130 36v-8M106 72v8M118 72v8M130 72v8'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Ccircle cx='118' cy='84' r='4'/%3E%3Ccircle cx='60' cy='84' r='4'/%3E%3Ccircle cx='168' cy='52' r='4'/%3E%3C/g%3E%3C/svg%3E");
+
+  --rw-board-opacity: 0.05;
+  --rw-hero-opacity: 0.3;
+}
+
+// Brighter traces in dark themes
+:root.skin-theme-clientpref-night,
+:root.skin-theme-clientpref-black {
+  --rw-copper: oklch(70% 0.115 52);
+  --rw-board-opacity: 0.08;
+  --rw-hero-opacity: 0.42;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.skin-theme-clientpref-os {
+    --rw-copper: oklch(70% 0.115 52);
+    --rw-board-opacity: 0.08;
+    --rw-hero-opacity: 0.42;
+  }
+}
+
+// Page background
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--rw-copper);
+  opacity: var(--rw-board-opacity);
+  -webkit-mask-image: var(--rw-board);
+  mask-image: var(--rw-board);
+  -webkit-mask-size: 320px 320px;
+  mask-size: 320px 320px;
+}
+
+// Frontpage hero
+.frontpage-title {
+  position: relative;
+  overflow: hidden;
+  border-color: color-mix(in oklab, var(--rw-copper) 35%, $border-color-base);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-color: var(--rw-copper);
+    opacity: var(--rw-hero-opacity);
+    -webkit-mask-image: var(--rw-board-hero), linear-gradient(105deg, transparent 34%, #000 100%);
+    mask-image: var(--rw-board-hero), linear-gradient(105deg, transparent 34%, #000 100%);
+    -webkit-mask-size: 340px 201px, cover;
+    mask-size: 340px 201px, cover;
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// Section headings
+.frontpage-container-heading .mw-headline,
+.mw-body-content .mw-heading2 {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, var(--rw-copper), transparent 65%) 1;
+  padding-bottom: $space-xs;
+}
+
+// Broken media hover
+figure[typeof~='mw:File/Thumb'] > a:first-child:not(.mw-file-description):hover,
+figure[typeof~='mw:File/Frame'] > a:first-child:not(.mw-file-description):hover {
+  color: $color-base--emphasized;
+  background-color: color-mix(in oklab, var(--rw-copper) 18%, transparent);
+}
+
+// Logo
+.mw-logo-icon {
+  filter: $filter-invert;
+}
+
+// Infobox heading
+.infobox {
+  th[colspan],
+  caption {
+    border-bottom: 2px solid var(--rw-copper);
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Repair Wiki"
+		]
+	},
+	"repairwiki-formedit": "Label of the form edit tab. Replaces {{msg-mw|formedit}} and {{msg-mw|pf_viewform}}.",
+	"repairwiki-others": "Label of the \"Others\" sidebar category. Replaces {{msg-mw|others}}."
+}

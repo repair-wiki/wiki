@@ -1,0 +1,13 @@
+Subject: [PATCH] Upgrade guzzlehttp/guzzle to 7.15.2
+
+--- a/composer.json
++++ b/composer.json
+@@ -34,7 +34,7 @@
+ 		"ext-openssl": "*",
+ 		"ext-xml": "*",
+ 		"ext-xmlreader": "*",
+-		"guzzlehttp/guzzle": "7.12.3",
++		"guzzlehttp/guzzle": "7.15.2",
+ 		"justinrainbow/json-schema": "5.3.1",
+ 		"liuggio/statsd-php-client": "1.0.18",
+ 		"mck89/peast": "1.17.4",

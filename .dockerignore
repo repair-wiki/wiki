@@ -1,0 +1,6 @@
+.git
+.env
+.idea
+data/*
+!data/robots.txt
+!data/logo/

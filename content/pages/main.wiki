@@ -1,0 +1,46 @@
+{{#seo:description=A community-maintained repository of repair information for any kind of device, from phones and laptops to medical equipment. Free guides anyone can edit.}}
+__NOTOC__
+<div style="border-radius: var(--border-radius-medium)" class="mw-message-box-warning">
+  <div style="border-top: none; text-align: center;" class="frontpage-container-content">
+   <p style="margin: 0;">'''This is the only Repair Wiki.'''</p>
+   <p style="margin: 0;">The previous site at old.repair.wiki has been retired and is no longer maintained. All content now lives here.</p>
+  </div>
+</div>
+
+{{Template:FrontpageHeader}}
+{{FrontpageContainerRow|
+  {{FrontpageContainerColumn|{{Icon|articlesSearch}} Search|{{SearchBox}}}}
+}}
+{{FrontpageContainerRow|
+  {{FrontpageContainerColumn|{{Icon|article}} Explore Guides|{{FrontpageImageButtons}}}} 
+}}
+
+{{FrontpageContainerRow|
+  {{FrontpageContainerColumn|{{Icon|edit}} Contribute knowledge|<!--
+-->
+* If you are new to wikis, [[Contribution Guide|start here!]]
+* Familiar with wikis? Start contributing!
+[[RepairWiki:Create|{{FullWidthButton|Create a new page!|color=blue}}]]
+
+[[:Category:Stubs|{{FullWidthButton|Fill out Stub pages!|color=blue}}]]
+
+[[Special:batchupload|{{FullWidthButton|Upload multiple images|color=blue}}]]
+}}
+  {{FrontpageContainerColumn|{{Icon|link}} Repair Sources|<!--
+-->
+*[[3rd Party Repair Channels]]
+*[https://discord.gg/7y9NP39k4C All-Things Repair Discord]
+*[https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w Louis Rossmann's Youtube Channel]
+*[https://www.rossmanngroup.com/ Rossmann Group's Website]
+
+}}
+  {{FrontpageContainerColumn|{{Icon|star}} Featured General Guides|<categorytree mode="pages">Repair Basics</categorytree>}}
+
+}}
+
+{{FrontpageContainerRowLinksGrid|[[Contribution Guide|<!--
+-->{{FrontpageContainerRowLink|How to Contribute}}]]<!--
+-->[[RepairWiki:Guidelines|{{FrontpageContainerRowLink|Guidelines}}]]<!--
+-->[[Talk:Repair_Wiki|{{FrontpageContainerRowLink|Suggestions}}]]<!--
+-->{{FrontpageContainerRowLink|[https://discord.gg/7y9NP39k4C Discord]}}
+}}

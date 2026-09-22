@@ -1,72 +1,141 @@
 [submodule "extensions/PageForms"]
 	path = extensions/PageForms
-	url = git@github.com:repair-wiki/mediawiki-extensions-PageForms.git
-	branch = master
-[submodule "extensions/Discord"]
-	path = extensions/Discord
+	url = git@github.com:wikimedia/mediawiki-extensions-PageForms.git
+	branch = REL1_44
+
+[submodule "extensions/mw-discord"]
+	path = extensions/mw-discord
 	url = git@github.com:jayktaylor/mw-discord.git
 	branch = master
+
 [submodule "extensions/TabberNeue"]
 	path = extensions/TabberNeue
 	url = git@github.com:StarCitizenTools/mediawiki-extensions-TabberNeue.git
 	branch = main
+
 [submodule "extensions/Popups"]
 	path = extensions/Popups
 	url = git@github.com:wikimedia/mediawiki-extensions-Popups.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/Echo"]
 	path = extensions/Echo
 	url = git@github.com:wikimedia/mediawiki-extensions-Echo.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/LoginNotify"]
 	path = extensions/LoginNotify
 	url = git@github.com:wikimedia/mediawiki-extensions-LoginNotify.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/NativeSvgHandler"]
 	path = extensions/NativeSvgHandler
 	url = git@github.com:wikimedia/mediawiki-extensions-NativeSvgHandler.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/DynamicPageList3"]
 	path = extensions/DynamicPageList3
 	url = git@github.com:Universal-Omega/DynamicPageList3.git
+	branch = REL1_43
+
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
 	url = git@github.com:StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
+	branch = REL1_43
+
 [submodule "extensions/DeleteBatch"]
 	path = extensions/DeleteBatch
 	url = git@github.com:wikimedia/mediawiki-extensions-DeleteBatch.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/VEForAll"]
 	path = extensions/VEForAll
 	url = git@github.com:wikimedia/mediawiki-extensions-VEForAll.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/ConfirmEdit"]
 	path = extensions/ConfirmEdit
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmEdit.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/StopForumSpam"]
 	path = extensions/StopForumSpam
 	url = git@github.com:wikimedia/mediawiki-extensions-StopForumSpam.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/AbuseFilter"]
 	path = extensions/AbuseFilter
 	url = git@github.com:wikimedia/mediawiki-extensions-AbuseFilter.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/ConfirmAccount"]
 	path = extensions/ConfirmAccount
 	url = git@github.com:wikimedia/mediawiki-extensions-ConfirmAccount.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "skins/Citizen"]
 	path = skins/Citizen
 	url = https://github.com/StarCitizenTools/mediawiki-skins-Citizen.git
+
 [submodule "extensions/SimpleBatchUpload"]
 	path = extensions/SimpleBatchUpload
 	url = https://github.com/ProfessionalWiki/SimpleBatchUpload.git
+
 [submodule "extensions/CategoryTree"]
 	path = extensions/CategoryTree
 	url = git@github.com:wikimedia/mediawiki-extensions-CategoryTree.git
-	branch = REL1_41
+	branch = REL1_43
+
 [submodule "extensions/SmiteSpam"]
 	path = extensions/SmiteSpam
 	url = git@github.com:wikimedia/mediawiki-extensions-SmiteSpam.git
-	branch = REL1_41
+	branch = REL1_43
+
+[submodule "extensions/Elastica"]
+	path = extensions/Elastica
+	url = git@github.com:wikimedia/mediawiki-extensions-Elastica.git
+	branch = REL1_43
+
+[submodule "extensions/CirrusSearch"]
+	path = extensions/CirrusSearch
+	url = git@github.com:wikimedia/mediawiki-extensions-CirrusSearch.git
+	branch = REL1_43
+
+[submodule "extensions/CheckUser"]
+	path = extensions/CheckUser
+	url = git@github.com:wikimedia/mediawiki-extensions-CheckUser.git
+	branch = REL1_43
+
+[submodule "extensions/ProtectSite"]
+	path = extensions/ProtectSite
+	url = git@github.com:wikimedia/mediawiki-extensions-ProtectSite.git
+	branch = REL1_43
+
+[submodule "extensions/BulkBlock"]
+	path = extensions/BulkBlock
+	url = git@github.com:wikimedia/mediawiki-extensions-BulkBlock.git
+	branch = REL1_43
+
+[submodule "extensions/MassRollback"]
+	path = extensions/MassRollback
+	url = https://github.com/codedbyjake/MassRollback.git
+	branch = REL1_43
+
+[submodule "extensions/AntiSpoof"]
+	path = extensions/AntiSpoof
+	url = git@github.com:wikimedia/mediawiki-extensions-AntiSpoof.git
+	branch = REL1_43
+
+[submodule "extensions/SearchDigest"]
+	path = extensions/SearchDigest
+	url = https://github.com/weirdgloop/mediawiki-extensions-SearchDigest.git
+	branch = REL1_43
+	
+[submodule "extensions/WikiSEO"]
+	path = extensions/WikiSEO
+	url = git@github.com:wikimedia/mediawiki-extensions-WikiSEO.git
+	branch = REL1_43
+[submodule "extensions/CloudflarePurge"]
+	path = extensions/CloudflarePurge
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CloudflarePurge
+	branch = REL1_44

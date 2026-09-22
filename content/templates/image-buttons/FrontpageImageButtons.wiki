@@ -1,0 +1,36 @@
+{{FrontpageContainerRow|
+
+
+{{FrontpageImageButton|[[:Category:Phones|Phones]]|Links-phones.png}}
+{{FrontpageImageButton|[[:Category:Laptops|Laptops]]|Links-laptops.png}}
+{{FrontpageImageButton|[[:Category:Game_Consoles|Game Consoles]]|Links-gameconsoles.png}}
+{{FrontpageImageButton|[[:Category:Computer/All_In_Ones|AIO Computers]]|Links-pc.png}}
+{{FrontpageImageButton|[[:Category:Computer_Components|PC Components]]|Links-component.png}}
+{{FrontpageImageButton|[[:Category:Tablets|Tablets]]|Tablets.png}}
+
+
+}}
+{{FrontpageContainerRow|
+
+{{FrontpageImageButton|[[:Category:Cameras|Cameras]]|Cameras.png}}
+{{FrontpageImageButton|[[:Category:Television/Monitors|TVs/Monitors]]|TelevisionsMonitors.png}}
+{{FrontpageImageButton|[[:Category:Printers|Printers]]|Printers.png}}
+{{FrontpageImageButton|[[:Category:3D Printers|3D Printers]]|3D Printers.png}}
+{{FrontpageImageButton|[[:Category:Drones|Drones]]|Drones.png}}
+{{FrontpageImageButton|[[:Category:AV Equipment|AV Equipment]]|AV Equipment.png}}
+
+
+
+}}
+{{FrontpageContainerRow|
+
+
+{{FrontpageImageButton|[[:Category:Medical Devices|Medical Devices]]|Medical Equipment.png}}
+{{FrontpageImageButton|[[:Category:Industrial Devices|Industry Devices]]|Industrial Devices.png}}
+{{FrontpageImageButton|[[:Category:Vehicles|Vehicles]]|Vehicles.png}}
+{{FrontpageImageButton|[[:Category:E-bikes/Scooters|E-bikes/Scooters]]|ebikes.png}}
+{{FrontpageImageButton|[[:Category:Farm Equipment|Farm Equipment]]|Farming.png}}
+{{FrontpageImageButton|[[:Category:Others|Others]]|Others.png}}
+
+
+}}

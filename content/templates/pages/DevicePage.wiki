@@ -1,0 +1,47 @@
+<noinclude>
+{{#template_params:Has code name (property=Has code name)|Manufacturer (property=Manufacturer)|Device release date (property=Inception)|Device type (property=Device type)}}
+</noinclude><includeonly>{| class="infobox"
+! class="infobox-heading" colspan="2" |<span>[[Device::{{PAGENAME}}]]</span>
+|-
+! Manufacturer
+| [[:Category:{{{Manufacturer|}}} {{{Device type|}}}s|{{{Manufacturer|}}}]]
+|-
+! Code name
+| {{{Has code name|}}}
+|-
+! Release date
+| {{{Device release date|}}}
+|-
+! Device type
+| [[Device type::{{{Device type|}}}]]
+|-
+|}
+[[Category:Device]]
+{{#if:{{{Manufacturer|}}}
+|[[Category:{{{Manufacturer|}}}]]
+{{#set:Manufacturer={{{Manufacturer|}}}}}
+{{#if:{{{Device type|}}}
+|[[Category:{{{Manufacturer|}}} {{{Device type|}}}s]]
+}}
+}}
+
+{{#if:{{{Device type|}}}
+|[[Category:{{{Device type|}}}s]]
+}}
+
+
+<!-- SEO description -->
+{{#seo:description=Repair guides, known faults and replacement parts for the {{#if:{{{Manufacturer|}}}|{{{Manufacturer}}}&#32;}}{{PAGENAME}}{{#if:{{{Device type|}}}|&#32;{{{Device type}}}}}.}}
+</includeonly>
+<noinclude>
+<templatedata>
+{
+	"params": {
+		"Manufacturer": {},
+		"Device release date": {},
+		"Device type": {},
+		"Has code name": {}
+	}
+}
+</templatedata>
+</noinclude>

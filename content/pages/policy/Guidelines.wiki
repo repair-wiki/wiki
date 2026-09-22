@@ -1,0 +1,326 @@
+__NOTOC__
+
+Welcome to the Repair Wiki! This platform is designed to collect and organize information on repairing electronic devices in one place. Before contributing to the Wiki, there are a few important things to keep in mind.
+{{#tag:tabber|Layout & Navigation=
+== Wiki Structure ==
+[[File:repairwikistructure.png|thumb|504x504px|Repair wiki structure]]
+We have structured the Repair Wiki to make it easier to find specific information. There are four different types of pages:
+
+# '''Manufacturer:''' stores links to every device made by that manufacturer and every repair guide published for those devices
+# '''Device:''' stores reference information for the device such as pictures, voltage and resistance measurements etc. to act like a working device to compare the broken one to along with guides created for that specific device.
+# '''Repair guide:''' documentation of single problem and its solution(s)
+# '''Explanatory:''' can be used to document and explain how a device/circuit/part works or how to diagnose a problem
+Each of those types are explained below.
+=== Manufacturer pages ===
+Manufacturer pages contain links to every device made by that manufacturer. This page is a category page with sub categories for each device type that the manufacturer has. This page is created and updated automatically.
+
+=== Device pages ===
+The goal of these pages is to help users compare a working device to a non-working one. 
+
+When creating a new device page, simply use the device's name as the title E.g., iPhone 12. After the page has been created, press Edit Semantics button at the top and enter the manufacturer, code name (example, specific model of a device), release date, and type of device in the appropriate fields. This step is CRUCIAL to ensure that the device gets categorized correctly.
+
+Filling the page is as simple as uploading relevant photos to the appropriate sections. We recommend using [[Special:batchupload|batch upload]] for easier image upload. If there are external sources you want to link, making sure the content you are linking is archived is important. [https://en.wikipedia.org/wiki/Help:Archiving_a_source Here's how]
+
+Device pages are designed to provide reference information for the device, such as: 
+
+* Pictures of the PCB
+* Power up sequence (If applicable)
+* Diagrams/schematics of the important parts of the device
+
+* Working state measurements of:
+** resistances and voltage measurements for various power rails
+** diode mode readings for important components, circuits, and connectors
+
+[[MacBook Pro A2251|Example device page]]
+
+=== Repair Guide pages ===
+Repair Guide pages focus on documenting specific problems and solutions.
+
+When creating a new repair guide page, the title '''must first''' include the device it's intended to '''then''' a short description of the problem. Choosing the correct title is vital to avoid confusion and to improve SEO (Search Engine Optimization). Use "Not turning on" instead of "No power" for example. The title should be something that a person would naturally type into Google as their initial query when encountering that problem.
+
+After choosing a title and creating the page, you can start filling in the information based on the provided template. 
+Making use of Bullet and Numbered lists is a good idea to help break down the problem into individual steps that are easier for the reader to understand/follow.
+Try to include as many pictures as possible. When talking about a component, mark it with a number and refer to its corresponding picture, for example: U7001 (Figure 1). Where Figure 1 is the caption to the relevant image.
+
+When done, save the page then click Edit semantics button at the top and fill in the information about this guide. This step is very important to assign your guide to the appropriate device(s) and make it easier to find.
+
+'''Repair guides are ''stubs'' by default! If you believe the guide you wrote has little to no improvements left then you can remove the stub tag either by clicking on it in visual editor and then delete or by removing the <code><nowiki>{{Stub}}</nowiki></code> in source editor.'''
+
+The attributes for repair guide pages are:
+
+* Affected parts: the parts which the guide is intending to repair/fix. E.g. Motherboard, Display assembly, Speaker, Touch sensor.
+* Equipment needed: input everything you used to repair the problem from tools used to open the device to tools used to replace the broken/faulty parts.
+* Type: choose the type of repair guide
+* Difficulty:
+** Easy: only for part replacement where the parts can be easily obtained and there is little to no risk of breaking the device while trying to replace it
+** Medium: for part replacement if the parts/tools can't be easily obtained and there is mild risk of breaking the device while opening/replacing
+** Hard: anything that includes soldering
+** Specialist: BGA reworking
+
+
+[[MacBook Pro A2338 Not turning on, 0.00 - 0.05A current draw at 5V repair|Example repair guide]]
+=== Explanatory pages ===
+Explanatory pages are designed to provide detailed information and guidance on electrical topics such as component operation, circuit function, or device diagnosis.
+
+When creating a new explanatory page, it is important to choose a clear and concise title that accurately reflects the content.
+
+The only attributes for explanatory pages are the subject device(s) or category of devices, the type, and the difficulty.
+Difficulty here is more subjective than the repair guide difficulty, imagine yourself reading the page before understanding the topic, how difficult would it have been for you? 
+
+There is no specific template for this page type, it's a blank canvas for users to explain ideas in their own creative way. 
+
+[[Resistors - Repair Basics|Example explanatory page]]
+
+<br>
+== New Page ==
+Thanks for growing Repair Wiki! <br>
+Write as much or as little as you want, as it's stress free: if you don't finish, insert <code><nowiki>{{Stub}}</nowiki></code> at the top of the page in the source editor.<br>
+Once you are finished, underline every single link you clicked through on each page for breadcrumbing - the underline separates that page out from the rest to find easily.
+<br>
+===Create===
+Either from the homepage or using the buttons provided below, enter the title and click create. Afterward, place the information into the appropriate sections of the page.
+
+[[RepairWiki:Create|{{Clickable button|Create a new page!}}]]
+<br>
+
+== Move ==
+If a page has an incorrect title, you can move it: (Currently only admins can move, message on discord!)
+
+# Mouseover the <code>More</code> tab in the top right and click <code>Move</code>.
+# Give the page a <code>New title</code> and click <code>Move page</code>.
+# For normal pages, don't change the default namespace ''(Main)''.
+#Note that if you move a [[Special:Categories|category page]], pages belonging to it will need to be recategorized manually.
+==Delete==
+Ask one of the [{{fullurl:Special:ListUsers|group=sysop}} wiki admins] in the [https://discord.gg/7y9NP39k4C Discord].
+
+=== Other options: ===
+* If you don't want to have it truly deleted (to come back later to work on or archive it), or can't wait, then give the page a title that's not in use nor will be found. Just be sure to add the link of the page in the <code>discussion</code> tab of the place it got moved from, so people know it's still there if it was decided on being moved. 
+* You can also add it to the [[:Category:Stubs|Stub]] category by inserting <code><nowiki>{{Stub}}</nowiki></code> at the top of the page too for the off-chance someone else can grow it. Visit [[:Category:Stubs|'''Stub Pages''']] to help out those with the most need of contribution.
+
+==Minor changes==
+Once on a page, click <code>Edit</code> or <code>Edit Source</code> ''(recommended)'' in the top right of it to begin editing.
+
+Everyone starts small! If you want to add some information, fix typos or add a few links, go ahead.
+
+== Table of Contents ==
+Table of Contents (TOC) is inserted automatically on articles with more than three section headers.
+
+You can move the TOC somewhere else by inserting <code><nowiki>__TOC__</nowiki></code> on the page in the source editor.
+
+To align the TOC to the right, insert the [[Template:TOC_Right|Template]] <code><nowiki>{{TOC Right}}</nowiki></code> instead at the top of the page, right underneath the first header.
+
+To disable the TOC on the page, insert <code><nowiki>__NOTOC__</nowiki></code><br>
+==Section level headers==
+
+=== From the <code>Edit Source</code> tab: ===
+Section headers are added by using equal signs. Each indentation to a new level gets an extra equals sign surrounding the name (i.e. Level 2 gets 2 equals signs on each side, Level 3 gets 3, etc.).<br>Level 1 headers are reserved for the title and should '''not''' be used (i.e. =Example=).<pre>
+==Level 2 header==
+
+===Level 3 header===
+
+Text
+</pre>
+
+=== From the <code>Edit</code> tab: ===
+First, highlight the word you want to become a section. Then click on the <code>paragraph</code> dropdown menu. There you can see the hierarchy of section levels and select the one you want. It's also possible to make use of the shortcuts listed after highlighting. Section order (from highest to lowest): <code>Page Title</code> -> <code>Heading</code> -> <code>Subheading (1 -> 4)</code> -> <code>paragraph</code>
+
+==Major Changes==
+
+While you can make as many contributions and changes to different articles as you'd like, major changes to the general layout of the website need to be discussed first. If you're hesitant about a change you would like to implement, explain your ideas in the [https://discord.gg/7y9NP39k4C Discord], so that others can comment on it beforehand.
+
+All edits are publically viewable and reversible through the <code>View History</code> tab, so don't be afraid you to make mistakes. For larger edits it's advised that you state what's changed so others can stay informed. You may also want to share the information in the [https://discord.gg/7y9NP39k4C Discord] to bring further attention to it and inspire participation.
+
+If you're changing other's work substantially, giving the author a heads up preemptively would also be wise to avoid conflict.
+
+== Categories ==
+'''Categories are managed either automatically or by moderators. If you happen to come across content that is clearly mis-categorized or left uncategorized, feel free to make the necessary corrections.'''
+===Source Editor===
+The source editor is recommended in general, but especially for adding categories. Simply add <code>[[Category:_____]]</code> at the bottom for your [[:Category:Product Repair Guides|product page]].
+
+If you're using the [[RepairWiki:Guidelines#New Page|page creation box]], you will see <code><nowiki>[[Category:Name]]</nowiki></code> preloaded in the editor. Replace "Name" with your own category.
+
+=== Visual Editor ===
+To categorize a page using the visual editor, go to <code>Edit</code>, then the triple stacked bars (i.e. page options) and click on <code>Categories</code>. Under <code>add a category to this page</code>, start typing in the category you would like to see this page under. If the category already exists, select that one. If not, you can create a new category (which will have its own, unique URL for this).  If you want it in a subcategory, type in the category that is a subcategory.
+
+When you're finished, click on the name of the category. To add another category, type another one in and repeat. There's no limit to the number of categories a page can be under. To delete a category created, click on the category name. There will be a trash can icon to click on. Click <code>save changes</code> once done. To see the page under the category, go to the category URL and it will be seen under <code>Pages in category "_____"</code>. This will be separated from the subcategories (as pages aren't categories, only categories are).
+
+
+=== Notes: ===
+* Once you save a category, changing it becomes cumbersome, so make sure you get it right. New subcategories can be added however.
+* Often a category will have a separate gateway article with links to specific products. Check the URL to make sure you're on the right page.
+** If a link to your page doesn't show up, try clearing the cache:<br>'''Firefox / Safari''':  Ctrl-R (⌘-R on a Mac)<br>'''Google Chrome''': Ctrl-Shift-R (⌘-Shift-R on a Mac)
+{{!}}-{{!}}
+Formatting=
+== MediaWiki ==
+This wiki uses [[mediawikiwiki:Help:Formatting|MediaWiki Formatting]], which is also used on [https://www.wikipedia.org/ Wikipedia]. (Also known as [https://workingwithmediawiki.com/book/chapter4.html Wikitext] - there's a link to general [[mediawikiwiki:Help:Contents|help about MediaWiki]] / [[mediawikiwiki:Help:Formatting|Formatting]] in the sidebar.).
+
+== Page Formatting ==
+=== Links & Citations ===
+
+====Internal Links (Repair Wiki)====
+<pre>
+[[Main Page]]
+
+[[Standards|Standards page]]
+</pre>
+
+==== Result:====
+[[Main Page]]
+
+[[Standards|Standards page]]
+
+If the link is red, either the link is wrong, or the page doesn't exist yet.
+
+However if you want a page to redirect to another page, you can use the following:<pre>
+#REDIRECT [[Target Page]]
+</pre>
+
+==== External Links (other websites) ====
+Consider archiving your links to [[avoiding link rot|avoid link rot]].
+===== From the <code>Edit Source</code> tab: =====
+<pre>
+[https://www.gofundme.com/f/lets-get-right-to-repair-passed Right to Repair fundraiser]
+</pre>
+
+====== Result:======
+[https://www.gofundme.com/f/lets-get-right-to-repair-passed Right to Repair fundraiser]
+
+===== From the <code>Edit</code> tab: =====
+After highlighting the text to use, use the hyperlink symbol or CTRL + K to add a link.<br>
+=== Citations ===
+To transform an external link into a citation, enclose it in <code><nowiki><ref>URL</ref></nowiki></code> tags:
+<pre>Donate to the GoFundMe<ref>https://www.gofundme.com/f/lets-get-right-to-repair-passed Right to Repair fundraiser</ref></pre>If you want control over where the references list appears on the page use:
+<pre>{{Reflist}}</pre>
+
+==== Result:====
+Donate to the GoFundMe<ref>https://www.gofundme.com/f/lets-get-right-to-repair-passed Right to Repair fundraiser</ref>
+<references />
+
+===Italic & Bold Font===
+Don't be scared to use '''bolded text''' frequently in your articles, such as highlighting crucial steps of the repair process or safety warnings. It helps the reader find what they're looking for faster.
+
+==== Source Editor: ====
+<pre>
+* ''italic text''
+* '''bold text'''
+** '''''bold italic text'''''
+</pre>
+
+===== Result:=====
+*''italic text''
+*'''bold text'''
+**'''''bold italic text'''''
+
+=== Line breaks ===
+[[File:Arrow.png|alt=line break arrow|left|frameless]]
+Arrows in the editor indicate a single line break. Characters following line breaks will be inserted on the next line.
+
+You can add them in the source editor by typing <code><nowiki><br></nowiki></code>
+
+Put line breaks on a new line, so people know they're there.
+
+Use <code><nowiki>{{clear}}</nowiki></code> for line breaking all elements, including images.
+
+
+
+=== In-line Tabs ===
+<code>Source editor</code>, for 3 tabs:<pre>{{#tag:tabber|
+Tab 1=
+one
+{{!}}-{{!}}
+Tab 2=
+two
+{{!}}-{{!}}
+Tab 3=
+three
+{{!}}-{{!}}
+}}
+</pre>
+
+==== Results: ====
+{{#tag:tabber|
+Tab 1=
+one
+{{!}}-{{!}}
+Tab 2=
+two
+{{!}}-{{!}}
+Tab 3=
+three
+{{!}}-{{!}}
+}}
+<br>
+===Uploading & Embedding Files===
+Click [[Special:Upload|Upload File]] in the sidebar to upload files.
+
+Once uploaded, insert either of the following at the top of the page:
+
+<code><nowiki>{{File|FileName.png|Fig. 1: File Caption}}</nowiki></code>  '''or'''  <code><nowiki>[[File:FileName.png|right|thumb|350px|<center>'''Fig. 1: File Caption'''</center>]]</nowiki></code>
+
+==== Example:====
+[[File:RossmannWikiLogo.png|left|thumb|130px|'''Fig. 1: Rossmann Group logo''']]
+{{clear}}
+
+Make sure to reference the image in the solution text, ie. "See Fig. 1".
+
+You can search for images in the public domain [https://www.google.com/advanced_image_search here.]
+
+=== Templates ===
+*You can create your own template by typing the name of it after https://repair.wiki/w/Template:
+*Find what's already created here [[:Category:Formatting templates]]. Boilerplate templates are portions of information that get copied/pasted. If you edit the original, all the copies will change automatically.
+<br>
+<br>
+
+===Transclusion===
+You can include a page inside another page with <code><nowiki>{{:Page name}}</nowiki></code>.
+
+Make sure to use <code><nowiki><onlyinclude>text</onlyinclude></nowiki></code> to not duplicate too much content (search engines don't like it).
+
+==== Note: ====
+Make sure the page or Template you're transcluding has its categories inside noinclude tags: <code><nowiki><noinclude>[[Category:IPhone]]</noinclude></nowiki></code>
+
+if you want to link to a category instead, colon symbol in front of it: <code><nowiki>[[:Category:Product Repair Guides]]</nowiki></code>
+
+=== Code text: ===
+A highlighted blue box around text that's inside it.
+
+'''Source editor:''' type in <nowiki><code>highlight word</code></nowiki> 
+
+==== Result: ====
+<code>highlight word</code> 
+
+'''Visual editor:''' copy/paste from text that already has it. 
+
+==== Warning: ====
+Watch out for writing before and after the box, because they might get mixed into the box itself, when it shouldn't.
+{{!}}-{{!}}
+Suggestions & Discussion=
+==Suggestions==
+If you have suggestions for how to improve the wiki, you can leave them on [[Talk:Repair Wiki]]
+
+==Talk Pages / Discussion==
+Every page has a Talk Page associated with it.
+
+Click on <code>Discussion</code> in the top left to leave a comment on it, then add <code><nowiki>~~~~</nowiki></code> to insert a user signature, like so: <code>[[User:Patrolin|Patrolin]] ([[User talk:Patrolin|talk]]) 15:21, 24 April 2021 (PDT)</code>
+
+It is probably easier to just use the [https://discord.gg/7y9NP39k4C Discord], but it's a good use for leaving notice board-like notes.
+===Responses===
+When responding to someone in the talk pages, do it on a new line and prefix your message with <code>:</code> to give it indentation.
+
+This is the OP speaking. [[User:Patrolin|Patrolin]] ([[User talk:Patrolin|talk]]) 02:43, 5 May 2021 (PDT)
+:This is a response to OP. [[User:Karar|Karar]] ([[User talk:Karar|talk]]) 02:57, 5 May 2021 (PDT)
+::Here I've used double colon punctuation <code>::</code> to respond to the message above. [[User:Patrolin|Patrolin]] ([[User talk:Patrolin|talk]]) 03:00, 5 May 2021 (PDT)
+:Another response to OP. [[User:Karar|Karar]] ([[User talk:Karar|talk]]) 02:57, 5 May 2021 (PDT)
+
+{{!}}-{{!}}
+Copyright=
+== Your work ==
+* Mentioning copyrighted materials is at times unavoidable; sometimes someone already wrote out the solution or the reader wants more detail. Refer to the "Links & Citations" section under the "Formatting" tab to properly cite others' work.
+* If you make a new page or category on the Repair Wiki, you don't need to ask anyone for permission. You can even give yourself or someone else credit by inserting <code><nowiki>{{Credit|Name}}</nowiki></code>
+* All content on the Repair Wiki is for public use. You can freely download pages for your own use or for sharing with others using [[Special:Export]].
+
+== Proprietary Material ==
+* '''Examples:''' patented schematics, instruction manual PDFs, other people's images, plagiarized problems/solutions from online articles etc.
+* Material that is not your own or available for use under laws (such as fair use), licenses (i.e. open source), and copyrights (like public domain or creative commons) shouldn't be posted without permission. If permission is granted, then that should be stated next to the proprietary material, so that it's made known and can be verified by the grantor.
+* Anything that puts (or is at risk of putting) the Repair Wiki at risk of being litigated against and taken down shouldn't be posted.
+}}

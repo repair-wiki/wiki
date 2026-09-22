@@ -1,0 +1,20 @@
+This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::Laptop]]
+* [[Allows value::Computer Component]]
+* [[Allows value::Game Console]]
+* [[Allows value::Phone]]
+* [[Allows value::Tablet]]
+* [[Allows value::Television/Monitor]]
+* [[Allows value::Camera]]
+* [[Allows value::Printer]]
+* [[Allows value::3D Printer]]
+* [[Allows value::Drone]]
+* [[Allows value::AV Equipment]]
+* [[Allows value::Medical Device]]
+* [[Allows value::Other]]
+* [[Allows value::Computer/All In One]]
+* [[Allows value::Industrial Device]]
+* [[Allows value::Vehicle]]
+* [[Allows value::Farming Equipment]]

@@ -1,0 +1,20 @@
+<includeonly>
+{| class="wikitable" style="width:600px;"
+|+Create a New Page
+!New Page Templates
+! New Page Name
+|-
+| [[Template:{{{1}}}|{{{2}}}]]
+|{{#tag:inputbox |
+type=create
+width=30
+break=no
+useve=true
+preload=Template:{{{1}}}
+}}
+|}
+</includeonly>
+<noinclude>
+Sample:
+{{Create page|Device page/Example|Device page}}
+</noinclude>

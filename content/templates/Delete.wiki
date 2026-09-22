@@ -1,0 +1,31 @@
+{| style="text-align:center; margin:auto; text-size:50"
+|+ <big><big>'''Warning'''</big></big>
+| This page has been marked for deletion.
+|-
+| The given reason is: {{#if: {{{1|}}}|{{{1}}}|<span style="color:red">No reason has been given</span>}}
+|}
+<hr>
+<noinclude>
+<templatedata>
+{
+	"params": {
+		"1": {
+			"aliases": [
+				"reason"
+			],
+			"label": "reason",
+			"description": "The reason for deletion",
+			"example": "Spam",
+			"type": "string",
+			"required": true
+		}
+	},
+	"paramOrder": [
+		"1"
+	],
+	"description": "Prepend this to a page that shouldn't be on here and it will get added to Category:Candidates for deletion.",
+	"format": "inline"
+}
+</templatedata>
+</noinclude>
+<includeonly>[[Category:Candidates for deletion]]</includeonly>

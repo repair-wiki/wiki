@@ -1,0 +1,77 @@
+services:
+  rw-local:
+    build: .
+    volumes:
+      - ./data/images:/var/www/html/images
+      # Settings
+      - ./conf/LocalSettings.php:/var/www/html/LocalSettings.php
+      - ./conf/LocalSettings:/var/www/html/LocalSettings
+      # Semantics Configuration
+      - ./data/semantics:/var/www/html/semantics_config
+      # Nginx configuration
+      - ./conf/nginx.conf:/etc/nginx/sites-enabled/default
+    ports:
+      - "${WIKI_PORT}:80"
+    environment:
+      - WIKI_ENV=Dev
+      - DB_TYPE=mysql
+      - DB_SERVER=rw-local-db
+      - DB_NAME
+      - DB_USER
+      - DB_PASSWORD
+      - ADMIN_USER
+      - ADMIN_PASS
+      - FULL_URL=http://localhost:${WIKI_PORT}
+      - CANONICAL_URL
+      - MEDIAWIKI_SECRET
+      - CAPTCHA_SITEKEY
+      - CAPTCHA_SECRETKEY
+      - CAPTCHA_USE_HCAPTCHA
+      - DISCORD_HOOK
+      - CLOUDFLARE_PURGE_ZONE_ID
+      - CLOUDFLARE_PURGE_TOKEN
+      - REDIS_SERVER=rw-local-cache:6379
+      - SEARCH_SERVER=rw-local-opensearch:9200
+      - OATHAUTH_SECRET_KEY
+    depends_on:
+      rw-local-db:
+        condition: service_started
+      rw-local-cache:
+        condition: service_started
+
+  rw-local-db:
+    image: mariadb:11.8.9
+    restart: always
+    ports:
+      - "${DB_PORT}:3306"
+    environment:
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    volumes:
+      - ./data/db:/var/lib/mysql
+
+  rw-local-cache:
+    image: redis:8-bookworm
+    restart: always
+
+  rw-local-opensearch:
+    image: docker-registry.wikimedia.org/repos/search-platform/cirrussearch-opensearch-image:v1.3.20-12
+    restart: always
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+      - bootstrap.memory_lock=true
+      - compatibility.override_main_response_version=true # CirrusSearch REL1_43 only accepts Elasticsearch 7.10.x
+      - OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g # Set min and max JVM heap sizes to at least 50% of system RAM
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - rw-opensearch-data:/usr/share/opensearch/data
+
+volumes:
+  rw-opensearch-data:
