@@ -101,7 +101,7 @@ RUN apt-get install -y imagemagick --no-install-recommends
 
 # PHP Extensions
 RUN apt-get install -y libcurl4-openssl-dev
-RUN docker-php-ext-install -j "$(nproc)" curl bcmath
+RUN docker-php-ext-install -j "$(nproc)" curl bcmath pcntl
 RUN pecl install redis && docker-php-ext-enable redis
 
 # Image directory
