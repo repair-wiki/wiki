@@ -7,3 +7,6 @@ $wgDiscordWebhookURL = getenv('DISCORD_HOOK');
 
 # Excluded Namespaces
 $wgDiscordDisabledNS = [];
+
+# Bot edits
+$wgDiscordNoBots = false;
