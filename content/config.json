@@ -11,10 +11,6 @@
     ],
     "raw": [
         {
-            "path": "js/Common.js",
-            "page": "MediaWiki:Common.js"
-        },
-        {
             "path": "pages/main.wiki",
             "page": "Main Page"
         },
