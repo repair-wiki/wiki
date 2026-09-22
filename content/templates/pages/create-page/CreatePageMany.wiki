@@ -1,0 +1,48 @@
+Please remember to carefully review the [[RepairWiki:Guidelines|Guidelines]] before contributing.
+
+If the page name is already in use, you will be sent to edit that page.
+
+If you have any questions or suggestions, join the [https://discord.gg/7y9NP39k4C Wiki Discord] and let us know!
+
+Please pick the type of page you want to create, enter the title, and press "Create Page"
+
+If you're creating a device page with pictures, it's recommend to use batch image upload for your convenience, just name the files appropriately.
+[[Special:batchupload|{{FullWidthButton|Upload multiple images|color=blue}}]]
+
+{| class="wikitable"
+!What would you like to contribute?
+! Enter the page name
+|-
+| [[Template:Repair Guide/Example|Repair Guide]]
+|{{#tag:inputbox |
+type=create
+width=30
+editintro=RepairWiki:RepairGuideHelp
+break=no
+useve=true
+placeholder=E.g. iPhone X not turning on repair
+preload=Template:Repair Guide/Example
+}}
+|-
+| [[Template:Device page/Example|Device Page]]
+|{{#tag:inputbox |
+type=create
+width=30
+editintro=RepairWiki:DeviceGuideHelp
+placeholder=E.g. iPhone X
+break=no
+useve=true
+preload=Template:Device page/Example
+}}
+|-
+| [[Template:Explanatory Guide/Example|Explanatory Guide]]
+|{{#tag:inputbox |
+type=create
+width=30
+editintro=RepairWiki:ExpGuideHelp
+placeholder=E.g. How iPhone X charging circuit works
+break=no
+useve=true
+preload=Template:Explanatory Guide/Example
+}}
+|}

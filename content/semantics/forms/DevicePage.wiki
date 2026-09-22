@@ -1,0 +1,28 @@
+<noinclude>
+This is the "Device page" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Device page}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Device page}}}
+{| class="formtable"
+! Manufacturer: 
+| {{{field|Manufacturer|input type=text}}}
+|-
+! Code name (if applicable): {{H:title|Some devices have a unique identifiable code name, for example a 2022 MacBook Pro has a codename of A2338|(?)}} 
+| {{{field|Has code name|input type=text}}}
+|-
+! Device release date: 
+| {{{field|Device release date|input type=datepicker}}}
+|-
+! Device type: 
+| {{{field|Device type|input type=dropdown}}}
+|}
+{{{end template}}}
+
+Summary can be left empty.
+
+</includeonly>

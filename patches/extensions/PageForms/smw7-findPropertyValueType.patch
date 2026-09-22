@@ -1,0 +1,15 @@
+Subject: [PATCH] Use findPropertyValueType() for Semantic MediaWiki 7
+
+diff --git a/includes/PF_TemplateField.php b/includes/PF_TemplateField.php
+index 382c47b..34c564d 100644
+--- a/includes/PF_TemplateField.php
++++ b/includes/PF_TemplateField.php
+@@ -165,7 +165,7 @@ class PFTemplateField {
+ 		}
+ 		$label_formats = PFValuesUtils::getSMWPropertyValues( $store, $proptitle, "Has field label format" );
+ 		$propValue = \SMW\DIProperty::newFromUserLabel( $this->mSemanticProperty );
+-		$this->mPropertyType = $propValue->findPropertyTypeID();
++		$this->mPropertyType = $propValue->findPropertyValueType();
+ 
+ 		foreach ( $allowed_values as $allowed_value ) {
+ 			// HTML-unencode each value

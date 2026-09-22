@@ -1,0 +1,10 @@
+'''repair.wiki is a community project, originally created by the [https://fighttorepair.org/ Repair Preservation Group].'''<br><br>
+
+While you will find extensive guides on Apple Macbooks, iPads, and iPhones, information on repairing any kind of equipment is welcome.<br><br>
+
+Anyone and everyone is encouraged to use, contribute, or edit the contents found herein.<br>
+As co-founder Louis Rossman has said many times '''"don't ask if it's ok to post about repairing (xxxxx), just do it"'''<br><br>
+
+Content on this wiki is available under a [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike 3.0 License] unless otherwise noted.<br><br>
+
+Questions/Comments can be directed to: [mailto:team@repair.wiki team@repair.wiki]

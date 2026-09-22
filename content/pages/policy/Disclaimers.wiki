@@ -1,0 +1,29 @@
+== '''Disclaimers''' ==
+
+'''Liability and Responsibility'''
+
+The information on this Web site is intended solely for entertainment purposes and may not be used as a substitute for professional advice and/or information as circumstances will vary from person to person. You should not act or rely upon this information without seeking professional advice. Do not attempt any of the suggested actions, solutions, remedies, or instructions found on this Site without first consulting with a qualified professional. The materials are not intended to be nor do they constitute actionable professional advice. Transmission of this information is not intended to create a professional-client relation between Repair Wiki and/or it's affiliated partners and you. The owners, editors, contributors, administrators and other staff at Repair Wiki are not qualified professionals, and are only simply aggregating information found online for entertainment purposes only.
+
+Repair Wiki and any of it's affiliated partners gives no warranty and accepts no responsibility or liability for the accuracy or the completeness of the information and materials contained in this website. Under no circumstances will Repair Wiki or any of it's affiliated partners be held responsible or liable in any way for any claims, damages, losses, expenses, costs or liabilities whatsoever (including, without limitation, any direct or indirect damages for loss of profits, business interrupt or loss of information) resulting or arising directly or indirectly from your use of or inability to use this website or any websites linked to it, or from your reliance on the information and material on this website, even if Repair Wiki and any of it's affiliated partners have been advised of the possibility of such damages in advance.
+
+Repair Wiki and it's affiliated partners cannot guarantee the validity of the information found here. While we make all reasonable efforts to include accurate and up to date information, we make no warranties as to the accuracy of the content and assume no liability or responsibility for an error or omission in the content. Responsibility falls on the user to validate the accuracy of the information.
+
+Any and all of software, services and any other technology or materials provided by Repair Wiki and/or it's affiliated partners to the user are provided "as is" and without warranty of any kind. Repair Wiki and/or it's affiliated partners disclaim all warranties and conditions, whether express or implied, of merchantability, fitness for a particular purpose, or non-infringement. 
+
+'''Risks to Health'''
+
+Users are solely responsible for looking after and managing risks to their own health and/or safety when attempting to perform or follow any repair advice, instructions, suggestions or any other information on Repair Wiki or by any of it's affiliated partners. Repair Wiki and it's affiliated partners assumes no liability or warranties for risks to users health and/or safety. Users are strongly advised to take all appropriate precautions when performing repairs, and are solely responsible for maintaining and/or using any safety and/or protective equipment as appropriate.
+
+Risks to health may include, but are not limited to: electrocution, burns, crush injuries, cuts, photokeratitis (AKA Arc Eye/Welder's Flash), bruising, back injury, neck pain, repetitive strain injury, and more. If any injury occurs, desist any repairs at once and seek the advice of a medical health professional immediately.
+
+'''Trademarks'''
+
+All product and company names are trademarks or registered trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+
+'''Testimonials'''
+
+Any testimonials appearing on this website are received in various forms via a variety of submission methods. The testimonials reflect the real life experiences of individuals who used our products and/or services. However, individual results may vary. We do not claim, nor should the reader assume, that any individual experience recounted is typical or representative of what any other consumer might experience. Testimonials are not necessarily representative of what anyone else using our products and/or services may experience. The people giving testimonials on this website may have been compensated with free products or discounts for use of their experiences.
+
+'''Acceptance of Terms'''
+
+Continuing to use this site means you accept the disclaimers and terms and conditions as noted above. If you do not accept these terms, please click away from the site immediately.

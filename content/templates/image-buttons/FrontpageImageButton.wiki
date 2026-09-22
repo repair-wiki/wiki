@@ -1,0 +1,12 @@
+<includeonly>
+<div class="frontpage-image-button {{#ifeq:{{{2|}}}|||has-image}}">
+{{{1}}}
+{{#ifeq:{{{2|}}}|||[[File:{{#ifeq:{{{2|}}}||20230824_163906.jpg|{{{2}}}}}|link=]]}}
+</div>
+</includeonly>
+<noinclude>
+<div style="display:flex;">
+{{FrontpageImageButton|[[:Category:Phones|Phones]]}}
+{{FrontpageImageButton|[[:Category:Phones|Phones]]|20230824_163906.jpg}}
+</div>
+</noinclude>

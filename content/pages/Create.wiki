@@ -1,0 +1,3 @@
+__NOTOC__
+== Thank you for contributing to Repair.wiki! ==
+{{Template:Create page/many}}

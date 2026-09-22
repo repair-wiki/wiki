@@ -1,0 +1,80 @@
+$border-radius--small: var(--border-radius--small);
+$border-radius--medium: var(--border-radius-medium);
+$border-radius--large: var(--border-radius--large);
+$border-radius--pill: var(--border-radius--pill);
+
+$border-width-base: var(--border-width-base);
+$border-width-thick: var(--border-width-thick);
+$border-radius-base: var(--border-radius-base);
+$border-radius-sharp: var(--border-radius-sharp);
+$border-radius-pill: var(--border-radius-pill);
+$border-radius-circle: var(--border-radius-circle);
+
+$opacity-icon-base: var(--opacity-icon-base);
+$opacity-icon-base--hover: var(--opacity-icon-base--hover);
+$opacity-icon-base--selected: var(--opacity-icon-base--selected);
+$opacity-icon-base--disabled: var(--opacity-icon-base--disabled);
+
+$color-primary__h: var(--color-primary__h);
+$color-primary__s: var(--color-primary__s);
+$color-primary__l: var(--color-primary__l);
+$color-surface-0__s: var(--color-surface-0__s);
+$color-surface-0__l: var(--color-surface-0__l);
+$color-surface-1__s: var(--color-surface-1__s);
+$color-surface-1__l: var(--color-surface-1__l);
+$color-surface-2__s: var(--color-surface-2__s);
+$color-surface-2__l: var(--color-surface-2__l);
+$color-surface-3__s: var(--color-surface-3__s);
+$color-surface-3__l: var(--color-surface-3__l);
+$color-surface-4__l: var(--color-surface-4__l);
+$color-surface-4__s: var(--color-surface-4__s);
+$color-surface-0: var(--color-surface-0);
+$color-surface-1: var(--color-surface-1);
+$color-surface-2: var(--color-surface-2);
+$color-primary--hover: var(--background-color-progressive);
+$border-color-base: var(--border-color-base);
+$color-base: var(--color-base);
+$color-base--subtle: var(--color-base--subtle);
+$color-base--emphasized: var(--color-emphasized);
+$color-primary: var(--color-primary);
+$background-color-base: var(--background-color-base);
+$color-emphasized: var(--color-emphasized);
+$active-bg-color: var(--background-color-progressive-subtle);
+$active-text-color: var(--color-emphasized);
+
+$color-syntax-red: var(--color-syntax-red);
+$color-syntax-orange: var(--color-syntax-orange);
+$color-syntax-yellow: var(--color-syntax-yellow);
+$color-syntax-green: var(--color-syntax-green);
+$color-syntax-cyan: var(--color-syntax-cyan);
+$color-syntax-blue: var(--color-syntax-blue);
+$color-syntax-paleblue: var(--color-syntax-paleblue);
+$color-syntax-purple: var(--color-syntax-purple);
+$color-syntax-brown: var(--color-syntax-brown);
+$color-syntax-pink: var(--color-syntax-pink);
+$color-syntax-violet: var(--color-syntax-violet);
+$color-syntax-grey: var(--color-syntax-grey);
+
+$font-size-base: var(--font-size-base);
+$font-size-x-small: var(--font-size-x-small);
+$font-size-small: var(--font-size-small);
+$font-size-medium: var(--font-size-medium);
+$font-size-large: var(--font-size-large);
+$font-size-x-large: var(--font-size-x-large);
+$font-size-xx-large: var(--font-size-xx-large);
+$font-size-xxx-large: var(--font-size-xxx-large);
+
+$space-unit: var(--space-unit);
+$space-xxs: var(--space-xxs);
+$space-xs: var(--space-xs);
+$space-sm: var(--space-sm);
+$space-md: var(--space-unit);
+$space-lg: var(--space-lg);
+$space-xl: var(--space-xl);
+$space-xxl: var(--space-xxl);
+$size-icon: var(--size-icon);
+
+$filter-invert: var(--filter-invert);
+
+// Frontpage gutter
+$frontpage-gutter: 0.5rem;

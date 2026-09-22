@@ -1,0 +1,11 @@
+<div class="frontpage-title">
+    <p class="prefix">Welcome to</p>
+    <h1>Repair Wiki</h1>
+    <p class="suffix">A community project, originally created by the [https://fighttorepair.org/ Repair Preservation Group]</p>
+    <p> The goal of the Repair Wiki is to create a repository of information for repairing any kind of device from
+        phones to medical equipment. </p>
+    <div class="frontpage-stats">
+        <div class="frontpage-stat">[[Special:AllPages|<span class="frontpage-stat-value">{{NUMBEROFARTICLES}}</span><span class="frontpage-stat-label">Articles</span>]]</div>
+        <div class="frontpage-stat">[[Special:Statistics|<span class="frontpage-stat-value">{{NUMBEROFEDITS}}</span><span class="frontpage-stat-label">Edits</span>]]</div>
+    </div>
+</div>

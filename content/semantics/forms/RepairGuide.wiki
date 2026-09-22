@@ -1,0 +1,30 @@
+<noinclude>
+This is the "Repair Guide" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Repair Guide}}
+
+</noinclude><includeonly>
+
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Repair Guide}}}
+{| class="formtable"
+! Affects device(s): {{H:title|Enter the name of the devices this guide concerns. It is possible to enter multiple devices! |(?)}}
+| {{{field|Device|input type=tokens}}}
+|-
+! Affects part(s){{H:title|Write which parts of the device the guide is working with. E.g. Motherboard, Screen, Flex cable. |(?)}}: 
+| {{{field|Affects parts|input type=text}}}
+|-
+! Equipment needed: {{H:title|Write down all the needed equipment to perform this repair. |(?)}}
+| {{{field|Needs equipment|input type=text}}}
+|-
+! Type (Choose all that apply): 
+| {{{field|Type|input type=checkboxes}}}
+|-
+! Difficulty level: {{H:title|Select the suitable level of difficulty: for part replacements, the difficulty varies between easy and medium, depending on the ease of sourcing replacement components and the process of device disassembly. If the task involves soldering, choose hard difficulty; and for tasks involving BGA, choose specialist. |(?)}}
+| {{{field|Difficulty|input type=dropdown}}}
+|}
+{{{end template}}}
+Summary can be left empty.
+</includeonly>

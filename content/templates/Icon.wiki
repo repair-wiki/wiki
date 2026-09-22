@@ -1,0 +1,1 @@
+<span class="frontpage-icon citizen-ui-icon mw-ui-icon-wikimedia-{{{1|userAvatar}}}"></span>

@@ -1,0 +1,59 @@
+== Introduction ==
+Thank you for your interest in contributing to Repair.Wiki! We value your expertise and dedication to creating a comprehensive resource for [https://fighttorepair.org/ Right To Repair]. Our compensation program rewards your hard work and knowledge, acknowledging the specialized skills and effort required to create detailed repair guides. This program serves as both appreciation and an incentive for high-quality contributions.
+
+In this page, you'll find information about the guidelines, roles, and compensation amounts.
+
+== Contribution Types and Compensation ==
+You can get compensated for multiple things, here are the main ones outlined.
+
+=== 1. Creating New Repair Guides ===
+Contribute new knowledge, document repair cases. '''We do not condone plagiarism.''' However, It is possible to port guides to repair wiki ''given the consent of the original writer''.
+
+==== Guidelines ====
+
+* Every repair guide is expected to adhere to the [[RepairWiki:Guidelines|Guidelines]], be unique, and complete.
+** Adhering to the guidelines means knowing how to contribute and which information goes where.
+** Unique as in there is no similar guides to it on the wiki, you are the first.
+** Complete means having all the elements of a repair guide: Clear problem description and symptoms to ensure quick recognition by the reader if the problem they are facing is the one you are documenting. Concise yet rich diagnostic steps to identify the fault, and detailed repair steps.
+* Include relevant images, diagrams, and troubleshooting tips.
+* '''Ensure accuracy and clarity in your writing.''' Your information should be 100% correct and relevant.
+
+Example complete repair guide here!!!
+
+==== Compensation ====
+
+* $range for a complete and well-detailed guide from personal experience
+* $range for a complete guide ported from elsewhere given consent from the original writer
+
+=== 2. Contributing Pictures/Diagrams ===
+
+==== Guidelines ====
+
+* High-quality device and PCB images with clear annotations. Personally taken.
+* High-quality diagrams for power up sequence, schematic, and others. 
+* Measurements of various rails, data pins, etc in form of resistance/voltage/diode drop.
+
+==== Compensation ====
+
+* $range for a whole device worth of pictures
+
+=== 3. Contributing More Information (Stub pages) ===
+
+==== Guidelines ====
+
+* Expand existing repair guides with additional information by completing missing sections on existing stub pages.
+* Fact-check and provide reliable sources.
+
+==== Compensation ====
+
+* $range per substantial contribution/completed stub page.
+
+== General rules maybe? ==
+Something about us holding the right to value and vet your work, if it is something we do not want then you might not get paid
+
+something about how the payment is handled, they get paid AFTER the work is done etc. 
+
+== Contact Us ==
+If you have any questions or need clarification on these guidelines, please contact XXXXXXX
+
+Thank you for being a valuable contributor to Repair.Wiki!

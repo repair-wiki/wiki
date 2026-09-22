@@ -1,0 +1,24 @@
+<noinclude>
+This is the "Explanatory Guide" form.
+To create a page with this form, enter the page name below;
+if a page with that name already exists, you will be sent to a form to edit that page.
+
+{{#forminput:form=Explanatory Guide}}
+
+</noinclude><includeonly>
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Explanatory Guide}}}
+{| class="formtable"
+! Device: 
+| {{{field|Device}}}
+|-
+! Type: 
+| {{{field|Type}}}
+|-
+! Difficulty: {{H:title|Select the suitable level of difficulty: It's a subjective measure. Imagine yourself reading this page prior to having knowledge about it. How difficult would it be to digest the information provided? |(?)}}
+| {{{field|Difficulty|input type=dropdown}}}
+|}
+{{{end template}}}
+
+Summary can be left empty.
+</includeonly>

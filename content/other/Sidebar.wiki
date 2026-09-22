@@ -1,0 +1,38 @@
+* navigation
+** mainpage|mainpage-description
+** recentchanges-url|recentchanges
+** randompage-url|randompage
+** RepairWiki:Create|Add a new page
+* Main Categories
+** Category:Laptops|Laptops
+** Category:Computer Components|Computer Component
+** Category:Computer/All In Ones|Computers/All In Ones
+** Category:Game_Consoles|Game Consoles
+** Category:Phones|Phones
+** Category:Tablets|Tablets
+** Category:Television/Monitors|Televisions/Monitors
+** Category:Cameras|Cameras
+** Category:Printers|Printers
+** Category:3D Printers|3D Printers
+** Category:Drones|Drones
+** Category:AV Equipment|AV Equipment
+** Category:Medical Equipment|Medical Equipment
+** Category:Industrial Devices|Industrial Devices
+** Category:Others|Others
+* Links
+** RepairWiki:Guidelines|Guidelines
+** Contribution Guide|How can I help?
+** https://discord.gg/7y9NP39k4C|Discord
+** RepairWiki:General disclaimer|Disclaimers
+** RepairWiki:About|About Repair.wiki
+* Getting Started
+** Category:Repair Basics|Repair Basics
+** Resistors - Repair Basics|Resistors
+** Inductors - Repair Basics|Inductors
+** Capacitors - Repair Basics|Capacitors
+** Diodes - Repair Basics|Diodes
+** Transistors - Repair Basics|Transistors
+** 3rd Party Repair Channels|List of repair YT channels
+* SEARCH
+* TOOLBOX
+* LANGUAGES

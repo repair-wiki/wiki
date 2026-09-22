@@ -1,5 +1,5 @@
-ARG mediawiki_version=1.41.2-fpm
-ARG composer_version=2.7.1
+ARG mediawiki_version=1.43.9-fpm
+ARG composer_version=2.10.3
 
 # Trick to allow for COPY from for composer image
 FROM composer:${composer_version} AS composer
@@ -9,9 +9,14 @@ FROM mediawiki:${mediawiki_version}
 # Create script directory
 RUN mkdir /wiki/
 
-# Apply custom patches
-COPY ./patches/ /var/www/html/patches/
-RUN for i in /var/www/html/patches/*.patch; do patch -p1 < $i; done
+# Create sitemaps directory
+RUN mkdir -p /var/www/html/sitemap && chown -R www-data:www-data /var/www/html/sitemap
+
+# Create MediaWiki log and cache directories
+RUN mkdir -p /var/log/mediawiki /var/cache/mediawiki && chown -R www-data:www-data /var/log/mediawiki /var/cache/mediawiki
+
+# Create PHP-FPM log directory
+RUN mkdir -p /var/log/php-fpm && chown -R www-data:www-data /var/log/php-fpm
 
 # Copy extensions to the image
 COPY ./extensions/ /var/www/html/extensions/
@@ -21,13 +26,38 @@ COPY ./skins/ /var/www/html/skins/
 
 # Copy custom LocalSettings.php
 COPY ./conf/LocalSettings.php /var/www/html/LocalSettings.php
+COPY ./conf/LocalSettings /var/www/html/LocalSettings
+
+# Copy robots.txt
+COPY --chown=www-data:www-data ./data/robots.txt /var/www/html/robots.txt
+
+# Copy logo
+COPY --chown=www-data:www-data ./data/logo/ /var/www/html/logo/
+
+# Copy PHP-FPM pool conf
+COPY ./conf/www.conf /usr/local/etc/php-fpm.d/www.conf
+
+# Patches
+# Apply patches, fail on any error
+RUN --mount=type=bind,source=patches,target=/wiki/patches,readonly \
+    set -eux; \
+    find /wiki/patches -type f -name '*.patch' | while read -r patchfile; do \
+        rel="${patchfile#/wiki/patches/}"; \
+        targetdir="/var/www/html/$(dirname "$rel")"; \
+        echo "Patching $patchfile -> $targetdir"; \
+        if [ ! -d "$targetdir" ]; then \
+            echo "Target directory not found: $targetdir" >&2; \
+            exit 1; \
+        fi; \
+        (cd "$targetdir" && patch --verbose -p1 < "$patchfile"); \
+    done
 
 # Composer
 RUN apt update
 RUN apt install zip unzip
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
-# Semantic Mediawiki
+# Composer dependencies
 COPY ./conf/composer.local.json /var/www/html/composer.local.json
 RUN chown -R root ./composer.json
 ENV COMPOSER_ALLOW_SUPERUSER=1
@@ -55,16 +85,24 @@ RUN mkdir /wiki/cron
 # Add cron files
 ADD cron/update_spamlist.sh /wiki/cron/update_spamlist.sh
 ADD cron/run_jobs.sh /wiki/cron/run_jobs.sh
+ADD cron/generate_sitemap.sh /wiki/cron/generate_sitemap.sh
 
 # Update permissions
 RUN chmod 0644 /wiki/cron/update_spamlist.sh
+RUN chmod 0644 /wiki/cron/generate_sitemap.sh
 
 # Update crontab
-RUN crontab -l | { cat; echo "0 0 * * * bash /wiki/cron/update_spamlist.sh"; } | crontab -
-RUN crontab -l | { cat; echo "0 * * * * bash /wiki/cron/run_jobs.sh"; } | crontab -
+RUN crontab -l | { cat; echo "0 0 * * * su -s /bin/bash www-data -c 'bash /wiki/cron/update_spamlist.sh'"; } | crontab -
+RUN crontab -l | { cat; echo "*/10 * * * * su -s /bin/bash www-data -c 'bash /wiki/cron/run_jobs.sh'"; } | crontab -
+RUN crontab -l | { cat; echo "0 3 * * * su -s /bin/bash www-data -c 'bash /wiki/cron/generate_sitemap.sh'"; } | crontab -
 
 # Imagemagick
 RUN apt-get install -y imagemagick --no-install-recommends
+
+# PHP Extensions
+RUN apt-get install -y libcurl4-openssl-dev
+RUN docker-php-ext-install -j "$(nproc)" curl bcmath
+RUN pecl install redis && docker-php-ext-enable redis
 
 # Image directory
 RUN chmod 766 /var/www/html/images

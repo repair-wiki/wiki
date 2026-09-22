@@ -1,0 +1,2 @@
+# Block User page creation by new accounts
+User:.*  <autoconfirmed|errmsg=titleblacklist-forbidden-edit>

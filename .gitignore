@@ -1,4 +1,10 @@
 .env
-data/db
-data/images/*
-data/semantics/*
+data/*
+!data/robots.txt
+!data/logo/
+.idea
+content/.build
+content/node_modules
+*.log
+*.sql
+*.tar.gz

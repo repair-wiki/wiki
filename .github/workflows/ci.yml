@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      COMPOSE_PROJECT_NAME: rw
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - name: Build container image
+        run: docker build -t rw-rw-local:latest .
+
+      - name: Create .env for CI
+        run: |
+          cat > .env <<'EOF'
+          DB_PORT=3306
+          DB_NAME=wiki
+          DB_USER=wikiuser
+          DB_PASSWORD=ci_test_password
+          WIKI_PORT=8080
+          ADMIN_USER=admin
+          ADMIN_PASS=ci_test_admin_password
+          MEDIAWIKI_SECRET=ci_test_secret
+          CANONICAL_URL=
+          CAPTCHA_USE_HCAPTCHA=false
+          CAPTCHA_SITEKEY=10000000-ffff-ffff-ffff-000000000001
+          CAPTCHA_SECRETKEY=0x0000000000000000000000000000000000000000
+          CLOUDFLARE_PURGE_ZONE_ID=
+          CLOUDFLARE_PURGE_TOKEN=
+          DISCORD_HOOK=
+          EOF
+
+      - name: Start the dev stack
+        run: docker compose up -d
+
+      - name: Wait for the database
+        run: |
+          for i in $(seq 1 30); do
+            if docker compose exec -T rw-local-db mariadb-admin ping -h 127.0.0.1 --silent 2>/dev/null; then
+              break
+            fi
+            sleep 2
+          done
+          docker compose exec -T rw-local-db mariadb-admin ping -h 127.0.0.1 --silent 2>/dev/null \
+            || { echo "Database never became ready" >&2; exit 1; }
+
+      - name: Initialise the database
+        run: make init
+
+      - name: Run the update script
+        run: make update
+
+      - name: Build the search index
+        run: |
+          for i in $(seq 1 60); do
+            docker compose exec -T rw-local-opensearch curl -sf http://localhost:9200/_cluster/health >/dev/null 2>&1 && break
+            sleep 5
+          done
+          docker compose exec -T rw-local-opensearch curl -sf http://localhost:9200/_cluster/health >/dev/null 2>&1 \
+            || { echo "OpenSearch never became healthy" >&2; exit 1; }
+          make cirrus-config
+          make cirrus-reindex
+
+      - name: Publish content and check diff
+        run: |
+          make content-publish
+          make content-diff
+
+      - name: Tear down
+        if: always()
+        run: docker compose down -v

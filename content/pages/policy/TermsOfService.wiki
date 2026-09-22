@@ -1,0 +1,27 @@
+=Repair.wiki Terms of Service=
+Welcome to Repair.wiki! The goal of the Repair Wiki is to create a repository of information for repairing any kind of device from phones to medical equipment. 
+
+'''By using this website, you agree to these terms of service.'''
+
+== Content Licensing==
+'''Repair.wiki utilizes a Creative Commons Attribution 3.0 Unported (CC BY 3.0) license for all content unless explicitly stated otherwise.''' This means you are free to share and adapt the information found here, as long as you provide attribution to Repair.wiki and any identified contributors.
+
+For details on CC BY 3.0, please refer to the official license website: https://creativecommons.org/licenses/by/3.0/deed.en
+
+==User-Generated Content==
+Repair.wiki thrives on community contributions. By submitting content, you grant Repair.wiki a non-exclusive, irrevocable, royalty-free license to use, reproduce, adapt, publish, translate, and distribute your contributions.
+
+You retain ownership of your copyrights, but by submitting content, you agree to allow others to use it in accordance with the CC BY 3.0 license applied to Repair.wiki content.
+
+==Disclaimer==
+The information on Repair.wiki is intended for educational purposes only. We strive for accuracy, but cannot guarantee the success of any repair attempt. You assume all risks and liabilities associated with using the information provided.
+
+'''Repair.wiki is not responsible for any damages caused by following repair guides or using information found on this website.'''
+
+==Revisions==
+We reserve the right to revise these terms of service at any time. We will update the "Last Updated" date at the bottom of this page to reflect any changes.
+
+==Contact==
+If you have any questions regarding these terms of service, please contact us at team@repair.wiki
+
+'''''Last Updated: July 10, 2024'''''

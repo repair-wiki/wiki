@@ -1,0 +1,7 @@
+This is a property of type [[Has type::Text]].
+
+The allowed values for this property are:
+* [[Allows value::1. Easy]]
+* [[Allows value::2. Medium]]
+* [[Allows value::3. Hard]]
+* [[Allows value::4. Specialist]]
