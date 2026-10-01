@@ -1,0 +1,28 @@
+From d54a4c7936d1c83b02ec5364652b2c9aad92ce2a Mon Sep 17 00:00:00 2001
+From: SomeRandomDeveloper <git@srd.dev>
+Date: Thu, 27 Aug 2026 00:09:15 +0200
+Subject: [PATCH] SECURITY: Sanitize autoedit redirect URLs
+
+Bug: T435622
+Change-Id: I4ace525a1c1760ecdd1d770380606d9960d3e644
+(cherry picked from commit 56d9b0e31a5db98a4ca5a24903e079f5100c7a02)
+---
+ includes/parserfunctions/PF_AutoEdit.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/includes/parserfunctions/PF_AutoEdit.php b/includes/parserfunctions/PF_AutoEdit.php
+index d76f271e..c9df51e5 100644
+--- a/includes/parserfunctions/PF_AutoEdit.php
++++ b/includes/parserfunctions/PF_AutoEdit.php
+@@ -139,7 +139,7 @@ class PFAutoEdit {
+ 		}
+ 
+ 		if ( $redirect != '' ) {
+-			$linkToPage = $redirect;
++			$linkToPage = Skin::makeInternalOrExternalUrl( $redirect );
+ 		} elseif ( $bringToPage ) {
+ 			$linkToPage = $targetTitle->getFullURL();
+ 		}
+-- 
+2.43.0
+
