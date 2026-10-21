@@ -137,5 +137,5 @@
 	branch = REL1_43
 [submodule "extensions/CloudflarePurge"]
 	path = extensions/CloudflarePurge
-	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CloudflarePurge
+	url = git@github.com:wikimedia/mediawiki-extensions-CloudflarePurge.git
 	branch = REL1_44
