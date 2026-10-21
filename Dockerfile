@@ -1,4 +1,4 @@
-ARG mediawiki_version=1.43.9-fpm
+ARG mediawiki_version=1.43.11-fpm
 ARG composer_version=2.10.3
 
 # Trick to allow for COPY from for composer image
